@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/book_doctor_header_container"
+            android:layout_width="fill_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:padding="@dimen/space_5">
+
+            <ImageButton
+                android:id="@+id/book_doctor_action_close_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                font:name="Label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="MASUKKAN INFORMASI"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/pink"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_dark"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/space_10"
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/book_doctor_avatar_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:background="@color/grey_xxl"
+                            android:minHeight="100dp"
+                            android:minWidth="100dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

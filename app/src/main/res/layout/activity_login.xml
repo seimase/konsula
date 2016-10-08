@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/contact_us_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/register_toolbar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_action_contact_us_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_action_back" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/text_login2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size"
+            font:name="Label" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/text_loading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/text_tunggu"
+                font:name="Content" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con_refresh"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/l_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/contact_us_header_container">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/nav_input_login_container_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_60"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="@dimen/space_22"
+                        android:layout_height="@dimen/space_22"
+                        android:layout_marginBottom="@dimen/space_5"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:src="@drawable/ic_email_2" />
+
+                    <com.konsula.app.ui.custom.CustomEditText
+                        android:id="@+id/nav_login_email_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/space_40"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/reg_email"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="@dimen/space_7"
+                        android:paddingTop="0dp"
+                        android:textSize="@dimen/space_12"
+                        font:name="Content" />
+
+                    <ImageView
+                        android:id="@+id/right_icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@color/mdtp_transparent_black" />
+
+                    <View
+                        android:id="@+id/line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@+id/right_icon5"
+                        android:layout_alignLeft="@+id/icon5"
+                        android:layout_alignRight="@+id/right_icon5"
+                        android:layout_alignStart="@+id/icon5"
+                        android:layout_below="@+id/icon5"
+                        android:background="#939597" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="@dimen/space_22"
+                        android:layout_height="@dimen/space_22"
+                        android:layout_marginBottom="@dimen/space_5"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:src="@drawable/ic_lock_2" />
+
+                    <com.konsula.app.ui.custom.CustomEditText
+                        android:id="@+id/nav_login_password_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/space_40"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/reg_password"
+                        android:paddingBottom="@dimen/space_7"
+                        android:paddingTop="0dp"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="@dimen/space_12"
+                        font:name="Content" />
+
+                    <ImageView
+                        android:id="@+id/right_icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@color/mdtp_transparent_black" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@+id/right_icon2"
+                        android:layout_alignLeft="@+id/icon2"
+                        android:layout_alignRight="@+id/right_icon2"
+                        android:layout_alignStart="@+id/icon2"
+                        android:layout_below="@+id/icon2"
+                        android:background="#939597" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/login_forget_password_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_10"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/text_forgot_pass"
+                            android:textColor="@color/textColorBase"
+                            android:textSize="@dimen/text_size"
+                            font:name="Label" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llReg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_input_login_container_linear_layout"
+                android:layout_margin="@dimen/space_10"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomButton
+                    android:id="@+id/nav_login_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_40"
+                    android:background="@drawable/sample_shape"
+                    android:text="@string/text_login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    font:name="Label" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llRegContentContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llReg"
+                android:layout_margin="@dimen/space_10"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llOr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llReg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_with"
+                        font:name="Label" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llReg"
+                    android:paddingTop="@dimen/space_10"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/FrameLayout1"
+                        android:layout_width="@dimen/space_150"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginLeft="@dimen/space_12"
+                        android:layout_marginRight="@dimen/space_12"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/btnFacebook"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/space_40"
+                            android:background="@drawable/btn_shape_facebook"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Facebook"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/space_20"
+                            font:name="Klavika" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/FrameLayout"
+                        android:layout_width="@dimen/space_150"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginRight="@dimen/space_12"
+                        android:layout_marginTop="@dimen/space_6"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/btn_login_google"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/space_45"
+                            android:background="@drawable/btn_shape_google"
+                            android:gravity="center"
+                            android:text="Google"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/title_size"
+                            font:name="Roboto" />
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/google_sign_in_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <!--<Button-->
+                <!--android:id="@+id/btnFacebook"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginBottom="@dimen/space_20"-->
+                <!--android:layout_marginTop="@dimen/space_5"-->
+                <!--android:background="@drawable/facebook_shape"-->
+                <!--android:text="@string/title_facebook"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/title_size" />-->
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_grey">
+
+    <RelativeLayout
+        android:id="@+id/location_schedule_container_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_8"
+        android:paddingTop="@dimen/space_8"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10">
+
+        <com.konsula.app.ui.custom.CustomButton
+            android:id="@+id/location_schedule_arrow_left_view"
+            android:layout_width="60dp"
+            android:background="@drawable/shape_rounded_green"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Prev"
+            android:textColor="@color/white"
+            android:padding="@dimen/space_5"
+            android:textAllCaps="false"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <com.konsula.app.ui.custom.CustomButton
+            android:layout_width="60dp"
+            android:background="@drawable/shape_rounded_green"
+            android:id="@+id/location_schedule_arrow_right_view"
+            android:text="Next"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_height="35dp"
+            android:padding="@dimen/space_5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Label"
+            android:id="@+id/location_schedule_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="HARI INI, 22 OKT"
+            android:textColor="@color/textColorBase"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/location_schedule_container_relative_layout"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    font:type="bold"
+                    android:id="@+id/location_period_morning_name_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:padding="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/pagi"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_dark"/>
+
+                <com.konsula.app.ui.custom.MyWrappableGridView
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:id="@+id/location_period_morning_schedule_grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    font:type="bold"
+                    android:id="@+id/location_period_day_name_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:padding="@dimen/space_10"
+                    android:text="@string/siang"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    font:type="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_dark"
+                    android:orientation="vertical" />
+
+                <com.konsula.app.ui.custom.MyWrappableGridView
+                    android:id="@+id/location_period_day_schedule_grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:verticalSpacing="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    font:type="bold"
+                    android:id="@+id/location_period_noon_name_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:padding="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/sore"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_dark"
+                    android:orientation="vertical" />
+
+                <com.konsula.app.ui.custom.MyWrappableGridView
+                    android:id="@+id/location_period_noon_schedule_grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:clickable="true"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    font:type="bold"
+                    android:id="@+id/location_period_evening_name_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:padding="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/malam"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_dark"
+                    />
+
+                <com.konsula.app.ui.custom.MyWrappableGridView
+                    android:id="@+id/location_period_evening_schedule_grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

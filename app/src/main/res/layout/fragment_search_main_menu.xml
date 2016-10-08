@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_soft1">
+
+    <RelativeLayout
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/setting_header_container_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_action_contact_us_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_action_back" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/text_direktori"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size"
+            font:name="Label"
+            font:type="bold" />
+        <ImageButton
+            android:id="@+id/search_action_contact_us_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_search_small"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/dokfemaleicon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_187"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setting_header_container_linear_layout"
+        android:src="@drawable/ic_header_direktori4" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/search_box_fragment_search_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_60"
+        android:layout_below="@+id/setting_header_container_linear_layout">
+
+        <RelativeLayout
+            android:id="@+id/search_main_menu_search"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/shape_rounded_soft_grey_box">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/space_2"
+                android:paddingBottom="@dimen/space_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/ic_search_white" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/hint_search"
+                    android:padding="@dimen/space_7"
+                    font:name="Content"
+                    font:type="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/dokfemaleicon"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_box_fragment_search_container">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                app:elevation="0dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/search_main_menu_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:fillViewport="false"
+                    android:textAlignment="center"
+                    app:elevation="0dp"
+                    app:paddingEnd="0dp"
+                    app:paddingStart="0dp"
+                    app:tabBackground="@drawable/shape_search_menu_tab_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@null"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/pink"
+                    app:tabTextAppearance="@style/Theme.CustomTextAppearance.Search.Menu.Tab" />
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/search_main_menu_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</RelativeLayout>

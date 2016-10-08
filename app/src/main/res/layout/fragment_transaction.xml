@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/help_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/view_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:layout_width="@dimen/space_150"
+            android:layout_height="@dimen/space_150"
+            android:src="@drawable/ic_nodata"/>
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/text_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_no_data" />
+    </LinearLayout>
+
+</RelativeLayout>

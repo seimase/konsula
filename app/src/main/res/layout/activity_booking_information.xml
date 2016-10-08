@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:font="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/booking_information_header_container_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/booking_information_header_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/action_close_booking_info_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_back" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    font:name="Label"
+                    android:textSize="@dimen/toolbar_text_size"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="@dimen/space_10"
+                    android:text="@string/title_activity_booking_confirmation"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/booking_information_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.konsula.app.ui.custom.CustomButton
+        android:id="@+id/booking_information_book_action_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink"
+        android:text="@string/pemesanan"
+        android:textColor="@color/soft_grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        font:name="Label"
+        font:type="bold"/>
+
+    <ScrollView
+        android:id="@+id/booking_information_main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/booking_information_book_action_button"
+        android:layout_below="@id/booking_information_header_container_relative_layout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space_20"
+                android:paddingTop="@dimen/space_20">
+
+                <ImageView
+                    android:id="@+id/booking_information_avatar_image_view"
+                    android:layout_width="@dimen/profile_width"
+                    android:layout_height="@dimen/profile_height"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/booking_information_avatar_image_view"
+                    android:layout_toRightOf="@id/booking_information_avatar_image_view">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/space_10"
+                        android:paddingRight="@dimen/space_10">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/booking_information_doctor_name_text_view"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="drg. Johanness Ardiant"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size"
+                            font:name="Content"
+                            font:type="bold"/>
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/booking_information_doctor_job_text_view"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorBase"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold"
+                            font:name="Label" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/ic_jam"/>
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/booking_information_doctor_schedule_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="22 Okt 2015 - 11:30 WIB"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    font:name="Content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="70dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/ic_point_map" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/booking_information_practice_name_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Klinik Pelangi"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_size"
+                        font:name="Content"
+                        font:type="bold"/>
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/booking_information_practice_address_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Gedung Pelangi\nJl.Sudirman Kav. 65\nJakarta Pusat"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_size"
+                        font:name="Content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_marginRight="@dimen/space_10"/>
+
+                <com.konsula.app.ui.custom.CustomEditText
+                    font:name="Label"
+                    android:id="@+id/booking_information_email_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawablePadding="@dimen/space_5"
+                    android:hint="@string/email"
+                    android:singleLine="true"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_profile"
+                    android:layout_marginRight="@dimen/space_10"/>
+
+                <com.konsula.app.ui.custom.CustomEditText
+                    font:name="Label"
+                    android:id="@+id/booking_information_name_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawablePadding="@dimen/space_5"
+                    android:hint="@string/hint_nama"
+                    android:singleLine="true"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@color/grey_dark"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_gender"
+                        android:layout_marginRight="@dimen/space_10"/>
+
+                    <LinearLayout
+                        android:gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.20">
+
+                        <RadioGroup
+                            android:id="@+id/radioBtnReg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/space_16"
+                            android:orientation="horizontal"
+                            android:paddingTop="0dp">
+
+                            <RadioButton
+                                android:theme="@style/radionbutton"
+                                android:id="@+id/rboMaleA"
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:buttonTint="@android:color/transparent"
+                                android:layout_marginBottom="@dimen/space_7"
+                                android:background="@drawable/background_radiobutton_register"
+                                android:checked="true" />
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/tvMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:layout_marginRight="@dimen/space_5"
+                                android:foregroundGravity="center"
+                                android:paddingTop="@dimen/space_5"
+                                android:text="@string/reg_male" />
+
+                            <RadioButton
+                                android:theme="@style/radionbutton"
+                                android:id="@+id/rboFemaleA"
+                                android:buttonTint="@android:color/transparent"
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_marginBottom="@dimen/space_7"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:background="@drawable/background_radiobutton_register"
+                                android:checked="false"
+                                android:paddingRight="@dimen/space_5" />
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/tvFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:paddingTop="@dimen/space_5"
+                                android:text="@string/reg_female" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--<RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/booking_information_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Male"
+                            android:textSize="@dimen/text_size" />
+
+                        <RadioButton
+                            android:id="@+id/booking_information_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="@dimen/text_size" />
+                    </RadioGroup>-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:gravity="center_vertical"
+                android:id="@+id/llBirth">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_birthday"
+                    android:layout_marginRight="@dimen/space_10"/>
+                <com.konsula.app.ui.custom.CustomEditText
+                    font:name="Label"
+                    android:id="@+id/booking_information_birthdate_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:hint="@string/hint_tanggallahir"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_marginRight="@dimen/space_10"/>
+                <com.konsula.app.ui.custom.CustomEditText
+                    font:name="Label"
+                    android:id="@+id/booking_information_phone_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/hint_notel"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+            <!--<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/syarat_ketentuan"
+                android:textColor="@color/textColorBase"
+                android:textSize="@dimen/text_size" />-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_tos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_book_tos"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_tos1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_book_tos1"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_syaratketentuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:layout_toRightOf="@+id/text_tos1"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_book_syaaratdanketentuan"
+                        android:textSize="@dimen/text_size" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_tos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/text_syaratketentuan"
+                        android:text="@string/text_book_tos2"
+                        android:textSize="@dimen/text_size" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_kebijakanprivasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_book_kebijakanprivasi"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_tos3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_book_tos3"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/booking_information_not_login_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_lock"
+                        android:layout_marginRight="@dimen/space_10"/>
+                    <com.konsula.app.ui.custom.CustomEditText
+                        font:name="Label"
+                        android:id="@+id/booking_information_password_edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/pass"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/textColorHint"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@color/grey_dark"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="BELOM JADI MEMBER? SILAHKAN MASUKKAN INFORMASI ANDA UNTUK DAFTAR DAN BOOK"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/booking_information_btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_10">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Sudah Punya Akun? "
+                            android:textColor="@color/textColorBase"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Silahkan Login di sini "
+                            android:textColor="@color/textColorBase"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="80dp"
+                    android:text="@string/information_not_member"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/syarat_ketentuan"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

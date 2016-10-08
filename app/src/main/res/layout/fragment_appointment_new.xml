@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/month_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="January 2015"
+            android:textColor="@color/red_deep"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            font:name="Content"
+            font:type="bold" />
+
+        <ImageView
+            android:id="@+id/prev_month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal|left"
+            android:src="@drawable/ic_arrow_left" />
+
+        <ImageView
+            android:id="@+id/next_month_button"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal|right"
+            android:src="@drawable/ic_arrow_right" />
+    </FrameLayout>
+
+    <com.konsula.app.ui.view.WrapContentViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/descriptions"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        font:name="Label"
+        font:type="bold" />
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/description_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/view_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:layout_width="@dimen/space_150"
+            android:layout_height="@dimen/space_150"
+            android:src="@drawable/ic_nodata" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/text_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_no_data" />
+    </LinearLayout>
+</RelativeLayout>

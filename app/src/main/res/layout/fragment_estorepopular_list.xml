@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:name="com.konsula.app.ui.activity.estore.EstorePopularFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.konsula.app.ui.activity.estore.EstorePopularFragment"
+    tools:listitem="@layout/item_estore_product">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/estore_popular_message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/grey_m"
+        android:text="No Product Available"
+        android:visibility="gone"/>
+</RelativeLayout>

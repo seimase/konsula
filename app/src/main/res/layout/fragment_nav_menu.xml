@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="@color/navigationDrawerBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nav_welcome_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/space_10">
+
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_welcome_logo_image_view"
+            android:layout_width="@dimen/space_75"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Content"
+            android:id="@+id/nav_welcome_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_welcome_logo_image_view"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingTop="@dimen/space_10"
+            android:textColor="@color/white"
+            android:text="Ronald Wijaya"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/space_11"
+        android:background="@color/grey_xxl"
+        android:layout_below="@+id/nav_welcome_container"/>
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Label"
+        android:id="@+id/nav_menu_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_20"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/textColorHint" />
+
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Label"
+        android:id="@+id/nav_menu_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:textColor="@color/textColorHint"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/nav_menu_version"
+        android:layout_toEndOf="@+id/nav_menu_version" />
+
+    <android.support.v7.widget.RecyclerView
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:id="@+id/nav_menu_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/nav_menu_version"
+        android:layout_below="@id/nav_welcome_container"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/space_22" />
+</RelativeLayout>

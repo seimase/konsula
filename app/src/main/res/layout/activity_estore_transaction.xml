@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.konsula.app.ui.activity.estore.EstoreTransactionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryEstore"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingBottom="@dimen/space_2"
+        android:paddingTop="@dimen/space_5">
+
+        <ImageView
+            android:id="@+id/estore_back_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:onClick="back"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageView
+            android:id="@+id/estore_close_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="close"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/estore_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            font:type="bold" />
+    </RelativeLayout>
+
+    <com.konsula.app.ui.view.EstorePaymentStepView
+        android:id="@+id/payment_step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"></FrameLayout>
+</LinearLayout>

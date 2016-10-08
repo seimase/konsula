@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_8">
+
+        <LinearLayout
+            android:id="@+id/item_result_detail_profile_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingTop="@dimen/space_5">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_pastteledoc_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drg. Johanes "
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14"
+                font:name="Label"
+                font:type="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_detail_pastteledoc_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_2"
+                android:text="20 Mei 2016, 13.00 WIB"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_detail_profile_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_4"
+                android:layout_marginTop="@dimen/space_2"
+                android:paddingTop="@dimen/space_5"
+                android:text="@string/text_keluhan"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_detail_past_teledoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Sakit perut tiba tiba mual dan muntah"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                font:name="Label" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_seedetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/text_lihat_detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14"
+                font:name="Label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_result_detail_profile_middle_container_linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingTop="@dimen/space_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/space_5">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_result_detail_profile_total_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/ratingstar_small"
+                    android:text="Status :"
+                    android:textColor="@color/black"
+                    font:name="Label" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/space_2"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_result_past_teledoc_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="@dimen/space_2"
+                    android:layout_marginRight="@dimen/space_2"
+                    android:gravity="right"
+                    android:text="CANCELLED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16"
+                    font:name="Content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#939597" />
+</LinearLayout>

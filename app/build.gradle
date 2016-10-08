@@ -1,0 +1,137 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    defaultConfig {
+        applicationId "com.konsula.app"
+        minSdkVersion 16
+        defaultConfig {
+            applicationId "com.konsula.app"
+            minSdkVersion 16
+            targetSdkVersion 23
+            versionCode 14
+            versionName "1.1.5"
+            multiDexEnabled true
+        }
+        buildTypes {
+            release {
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("konsula-keystore.jks")
+            storePassword "4d5MZzU2qXQbV5Zk"
+            keyAlias "Konsula"
+            keyPassword "4d5MZzU2qXQbV5Zk"
+
+        }
+
+        debug {
+            storeFile file("konsula-keystore.jks")
+            storePassword "4d5MZzU2qXQbV5Zk"
+            keyAlias "Konsula"
+            keyPassword "4d5MZzU2qXQbV5Zk"
+
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            ext.betaDistributionReleaseNotes = "- Fix some UI" +
+                    "- Bypass Verification Code when Order"
+        }
+    }
+    repositories {
+        maven {
+            // Zendesk public repo
+            url 'https://zendesk.artifactoryonline.com/zendesk/repo/'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.mcxiaoke.volley:library:1.0.17'
+    compile 'com.google.http-client:google-http-client-android:1.21.0'
+    compile 'com.google.api-client:google-api-client-android:1.21.0'
+    compile 'com.google.api-client:google-api-client-gson:1.21.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.11.0'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-location:8.3.0'
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile 'com.google.android.gms:play-services-plus:8.3.0'
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile "com.mixpanel.android:mixpanel-android:4.9.0"
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.zopim.android:sdk:1.2.1.1'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.vistrav:ask:2.1'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile (name : 'VTAndroidAPI', ext: 'aar')
+}

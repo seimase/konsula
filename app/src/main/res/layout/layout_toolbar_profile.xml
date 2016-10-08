@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/doctor_profile_cover_page_image_view"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:background="@color/soft_grey" />
+
+        <LinearLayout
+            android:id="@+id/doctor_profile_cover_gape_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/doctor_profile_cover_page_image_view"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:id="@+id/doctor_profile_avatar_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/doctor_profile_cover_gape_linear_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_20"
+            android:background="@color/grey_xxl"
+            android:minHeight="100dp"
+            android:minWidth="100dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/doctor_profile_avatar_image_view"
+            android:layout_below="@id/doctor_profile_avatar_image_view"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_5"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/profile_doctor_name_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="drg. Jogann Adsas"
+                    android:textColor="@color/red_deep"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:text="22 rekomendasi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space_5"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/profile_doctor_spesialis_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Dokter Gigi"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:text="17 review"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

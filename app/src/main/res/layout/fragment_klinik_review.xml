@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/klinik_review_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Label"
+            font:type="bold"
+            android:layout_marginLeft="@dimen/space_20"
+            android:id="@+id/klinik_review_other_review_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="Lihat review lainnya (78)"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_super_small_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

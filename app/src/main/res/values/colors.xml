@@ -1,0 +1,92 @@
+<resources>
+    <!-- Main Color-->
+    <color name="newColorPrimary">#e1f3f6</color>
+    <color name="colorPrimary">#0ab0d9</color>
+    <color name="colorPrimaryDark">#0ab0d9</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#0091ea</color>
+    <color name="textColorBase">#202020</color>
+    <color name="textColorSecondary">#737373</color>
+    <color name="textColorHint">#9B9B9B</color>
+    <color name="textColorHighlight">#025E73</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="green_deep">#5cc3a8</color>
+    <color name="green_soft">#e2f3fa</color>
+    <color name="green_xxl">#5cc3a8</color>
+    <color name="grey_xxxl">#f0f0f0</color>
+
+    <color name="mdtp_transparent_black">#7f000000</color>
+    <!-- new toolbar-->
+    <color name="header_pink">#FFB6C1</color>
+    <color name="purple">#bca7d0</color>
+    <color name="blue_soft1">#e2f3fa</color>
+
+    <!--Black-->
+    <color name="black">#000000</color>
+    <color name="low_black">#202020</color>
+    <color name="dividerColor">#DCDCDC</color>
+    <color name="greysoft">#f3f3f5</color>
+    <color name="grey_xxxxl">#91bec4</color>
+    <color name="blue_soft">#e2f3fa</color>
+    <color name="blue_chat">#c5e8fb</color>
+
+    <!-- Navigation drawer color-->
+    <color name="navigationDrawerBackground">#363435</color>
+    <color name="navigationDrawerSelectedBackground">#202020</color>
+    <!--<color name="navigationDrawerSelectedBackground">#6C6C6E</color>-->
+
+    <!-- Indicator Tab Color-->
+    <color name="pink">#f27a93</color>
+    <color name="colorTabIndicator">#D82F32</color>
+    <color name="colorunderline">#939597</color>
+    <color name="colorStarBackground">#FFEAE74E</color>
+
+
+    <!-- Greys -->
+    <color name="white">#FFFFFF</color>
+    <color name="soft_grey">#F7F7F7</color>
+    <color name="cream_white">#FAF9F1</color>
+    <color name="grey_sss">#EEEEEE</color>
+    <color name="grey_s">#E5E5E5</color>
+    <color name="grey_ss">#E6E6E6</color>
+    <color name="grey_m">#DDDDDD</color>
+    <color name="grey_x">#D6D6D6</color>
+    <color name="grey_xl">#C7C7C7</color>
+    <color name="grey_xxl">#949599</color>
+    <color name="grey_dark">#737373</color>
+    <color name="teledokter_green">#5dc2a7</color>
+    <color name="pembiayaan_blue">#8dccda</color>
+    <color name="teledokter_lightgreen">#e2f3f7</color>
+    <color name="register_toolbar">#a6d8df</color>
+    <color name="facebook_button">#3b5998</color>
+    <color name="google_button">#3b5998</color>
+    <color name="blue_ocean">#a8dae1</color>
+
+   <!--Red Family-->
+    <color name="red_deep">#d83032</color>
+
+    <!--schedule color-->
+    <color name="date_active">#107F2D</color>
+    <color name="date_inactive">#C1C1C2</color>
+
+    <!-- color login-->
+    <color name="drawer_background_color">#404040</color>
+    <color name="drawer_button_color">#D82F32</color>
+    <color name="drawer_facebook_background">#3C5B9B</color>
+
+    <!-- toolbar-->
+    <color name="background_toolbar_inactive">#4C4D4F</color>
+    <color name="background_toolbar_active">#D82F32</color>
+
+    <!-- Ratinbar -->
+    <color name="ratingbar">#ffc220</color>
+
+    <color name="button_register">#5dc2a7</color>
+
+    <!-- Estore -->
+    <color name="colorPrimaryEstore">#9cb3dd</color>
+    <color name="step_inactive">#c5c7c9</color>
+    <color name="estore_text_color">#231f20</color>
+</resources>

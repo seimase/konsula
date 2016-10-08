@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/contact_us_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_action_contact_us_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_action_back" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Label"
+            android:textSize="@dimen/toolbar_text_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tentangkami"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/contact_us_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/space_20"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="@dimen/space_16"
+                android:src="@drawable/ic_logo2" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/text_about_us_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:text="@string/text_aboutus_moto"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    font:name="Label" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/text_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_weight="1.65"
+            android:text="@string/text_aboutus"
+            android:textSize="@dimen/text_size"
+            font:name="Content" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/tittle_copyright_aboutus"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_size"
+            font:name="Content"
+            font:type="bold" />
+    </LinearLayout>
+</RelativeLayout>

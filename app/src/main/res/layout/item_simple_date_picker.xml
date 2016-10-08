@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/date_pick"/>
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            style="@android:style/Widget.DatePicker"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnersShown="false" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="@string/time_pick"/>
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/datetimeset"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+    </LinearLayout>
+</ScrollView>

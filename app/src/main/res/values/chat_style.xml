@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base chat sdk theme. -->
+    <style name="ZopimChatTheme" parent="ZopimChatTheme.Light">
+        <!-- Customize chat theme here. -->
+        <item name="colorAccent">@color/purple</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+
+    </style>
+
+    <string name="chat_activity_title" translatable="false">Konsula Chat</string>
+    <integer name="typing_dot_duration">300</integer>
+    <!--Animation : widget cross-fade-->
+    <integer name="crossfade_duration">300</integer>
+
+    <!--Customize toolbar that replaces action bar-->
+    <style name="zopim_toolbar" parent="_zopim_toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <!--Customize not agents button-->
+    <style name="no_agents_button">
+        <item name="android:background">@color/purple</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <!--Customize where chat widget appears-->
+    <style name="chat_widget" parent="_chat_widget">
+        <item name="anchor">bottom_left</item>
+    </style>
+
+    <style name="_chat_widget_background">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!--Customize chat colors-->
+    <color name="chat_bubble_visitor">@color/purple</color>
+    <color name="typing_indicator_secondary">@android:color/transparent</color>
+
+
+</resources>

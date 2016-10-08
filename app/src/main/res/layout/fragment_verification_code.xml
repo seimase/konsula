@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/space_20">
+
+    <LinearLayout
+        android:id="@+id/nav_forget_password_input_container_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="@dimen/space_20">
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/textverfication"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_10"
+            android:gravity="center"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_size"
+            font:name="Label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_verifivation_1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_x"
+                android:layout_marginRight="@dimen/space_10"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_text_verifivation_2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/grey_x"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_text_verifivation_3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/grey_x"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1" />
+
+
+            <EditText
+                android:id="@+id/edit_text_verifivation_4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/grey_x"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_kirim_ulang"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:text="@string/text_kirim_ulang"
+                    android:textColor="@color/black"
+                    font:name="Label" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_ganti_nomer"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:text="@string/text_ganti_nomer"
+                    android:textColor="@color/black"
+                    font:name="Label" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

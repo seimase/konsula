@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alertTitlebackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/space_8"
+    android:paddingRight="@dimen/space_16"
+    android:paddingTop="@dimen/space_3"
+    android:paddingBottom="@dimen/space_3">
+    <ImageView
+        android:id="@+id/alertClose"
+        android:layout_width="@dimen/space_25"
+        android:layout_height="@dimen/space_25"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_close" />
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/alertTitle"
+        android:textSize="@dimen/space_20"
+        android:singleLine="true"
+        android:paddingBottom="@dimen/space_8"
+        android:ellipsize="end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        font:type="bold"
+        android:text="Title"/>
+</LinearLayout>

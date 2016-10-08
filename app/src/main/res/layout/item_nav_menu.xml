@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_nav_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_nav_menu_selector"
+    android:paddingBottom="@dimen/space_nav"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/item_nav_menu_icon_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_20"
+        android:src="@drawable/ic_search_white" />
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Label"
+        android:id="@+id/item_nav_menu_name_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_toRightOf="@id/item_nav_menu_icon_image_view"
+        android:gravity="center_vertical|left"
+        android:textColor="@drawable/shape_nav_menu_selector"
+        android:textSize="@dimen/space_14"/>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnUpgradePlus"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rl1"
+    android:background="@color/grey_x"
+    android:orientation="vertical">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/tvStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_45"
+        android:text="PLUS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        font:name="Label" />
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/tvStatuscurrent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:text="@string/text_current_membership"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone"
+        font:name="Label" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_dp_services"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/textmembership_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                font:name="Content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow_memebership"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/arrow_right_pembiayaan" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

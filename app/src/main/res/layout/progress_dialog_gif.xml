@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressBar1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/spinner"
+        android:layout_centerInParent="true" ></pl.droidsonroids.gif.GifImageView>
+
+</RelativeLayout>

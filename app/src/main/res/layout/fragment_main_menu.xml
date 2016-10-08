@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/tools"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_header_container_linear_layout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:splitMotionEvents="false"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/menu_chatdokter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.55"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.65"
+                        android:clickable="false"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_chatdokter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:src="@drawable/icon_chat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.80"
+                        android:clickable="false">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="@string/text_chatdokter"
+                            android:textSize="@dimen/space_14"
+                            font:name="Label"
+                            font:type="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/textColorHint" />
+
+                <LinearLayout
+                    android:id="@+id/menu_teledokter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.55"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.65"
+                        android:clickable="false"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_teledokter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/app_name"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:src="@drawable/icon_teledoc" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.80"
+                        android:clickable="false">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="@string/text_teledokter"
+                            android:textSize="@dimen/space_14"
+                            font:name="Label"
+                            font:type="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/menu_direktori"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.55"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.65"
+                        android:clickable="false"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_direktori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/app_name"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:src="@drawable/icon_directory" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.80"
+                        android:clickable="false">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="@string/text_direktori"
+                            android:textSize="@dimen/space_14"
+                            font:name="Label"
+                            font:type="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/textColorHint" />
+
+                <LinearLayout
+                    android:id="@+id/menu_estore"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.55"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.65"
+                        android:clickable="false"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_store"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/app_name"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:src="@drawable/icon_store" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.80"
+                        android:clickable="false">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="@string/text_estore"
+                            android:textSize="@dimen/space_14"
+                            font:name="Label"
+                            font:type="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_header_container_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_225"
+        android:layout_above="@+id/container_footer"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_homebanner"
+            android:visibility="gone" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/main_header_viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_225"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <com.konsula.app.ui.custom.widget.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/main_header_viewpager"
+                    CircleIndicator:ci_background="@color/grey_dark"
+                    CircleIndicator:ci_gravity="center"
+                    CircleIndicator:ci_margin="7dp"
+                    CircleIndicator:ci_mode="outside"
+                    CircleIndicator:ci_radius="4dp"
+                    CircleIndicator:ci_selected_background="@android:color/white" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navigationDrawerBackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8">
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="email"
+            android:gravity="center_horizontal"
+            android:text="@string/text_hubungi_kami"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/space_10"
+            android:textStyle="bold"
+            font:name="Label" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="phone"
+            android:gravity="center_horizontal"
+            android:text="@string/text_phone_wa"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/space_10"
+            android:textStyle="bold"
+            font:name="Label" />
+    </LinearLayout>
+
+</RelativeLayout>

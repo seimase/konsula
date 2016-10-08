@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:background="@color/soft_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/schedule_doctor_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/action_close_schedule_doctor_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_close" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                font:name="Label"
+                font:type="bold"
+                android:textSize="@dimen/toolbar_text_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/title_activity_schedule"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                font:name="Label"
+                android:textSize="@dimen/toolbar_text_size"
+                android:id="@+id/schedule_doctor_header_name_text_view"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="drg. Johannes Ardiant"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/schedule_doctor_header_container"
+        android:layout_margin="@dimen/space_10"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/schedule_doctor_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/soft_grey"
+            android:dividerHeight="@dimen/space_10" />
+    </LinearLayout>
+</RelativeLayout>

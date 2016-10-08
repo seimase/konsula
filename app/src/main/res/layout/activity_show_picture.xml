@@ -1,0 +1,13 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/show_picture_avatar_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout >

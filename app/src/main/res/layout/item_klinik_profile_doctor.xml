@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_klinik_doctor_content_container_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5"
+        android:weightSum="8">
+
+        <ImageView
+            android:id="@+id/item_klinik_avatar_image_view"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_weight="1.5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/space_85"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_weight="6.4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/doctor_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:id="@+id/item_klinik_detail_profile_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.5">
+
+                    <LinearLayout
+                        android:id="@+id/item_klinik_detail_profile_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/space_5">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_klinik_detail_profile_name_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Drg. Siti X"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_klinik_detail_profile_specialis_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dokter Umumn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            font:name="Content" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_klinik_detail_profile_klinik_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Klinik"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_size"
+                            font:name="Content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/item_klinik_detail_profile_middle_container_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/item_klinik_profile_doctor_rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:progressDrawable="@drawable/ratingstar_small"
+                                android:rating="3.5" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/item_klinik_detail_profile_total_review_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="@dimen/space_2"
+                                android:layout_marginRight="@dimen/space_2"
+                                android:text="+22"
+                                android:textSize="12sp"
+                                font:name="Label" />
+
+                            <ImageButton
+                                android:id="@+id/item_klinik_detail_profile_review_image_button"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/review" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/doctor_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/space_5">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_klinik_detail_profile_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="IDR 260.000,00"
+                    android:textSize="12sp"
+                    font:name="Content" />
+
+                <LinearLayout
+                    android:id="@+id/item_klinik_detail_profile_book_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|right"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/space_5"
+                        android:paddingTop="@dimen/space_5"
+                        android:text="@string/pemesanan"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        font:name="Content"
+                        font:type="bold" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="3dp"
+                        android:paddingTop="@dimen/space_5"
+                        android:src="@drawable/ic_arrow_direktori" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top"
+    android:background="@android:color/transparent"
+    android:gravity="top">
+
+    <LinearLayout
+        android:id="@+id/search_doctor_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <RelativeLayout
+            android:id="@+id/search_doctor_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_5">
+
+            <ImageButton
+                android:id="@+id/search_doctor_action_close_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                font:name="Label"
+                android:textSize="@dimen/toolbar_text_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/cari"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_alignLeft="@+id/search_doctor_action_close_image_button"
+                android:layout_alignStart="@+id/search_doctor_action_close_image_button" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/search_doctor_location_box_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/search_doctor_header_container"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/space_10"
+            android:background="@drawable/shape_rounded_soft_grey_box"
+            android:drawableLeft="@drawable/ic_point_map"
+            android:editable="false"
+            android:hint="@string/lokasi"
+            android:padding="@dimen/space_5"
+            android:paddingLeft="@dimen/space_20"
+            android:textColor="@color/textColorSecondary"
+            android:textColorHint="@color/textColorHint" />
+
+        <EditText
+            android:id="@+id/search_doctor_spesialisasi_box_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/search_doctor_location_box_edit_text"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_rounded_soft_grey_box"
+            android:drawableLeft="@drawable/ic_search_white"
+            android:hint="@string/spesialisasi"
+            android:padding="@dimen/space_5"
+            android:textColorHint="@color/textColorHint" />
+
+        <RadioGroup
+            android:id="@+id/radio_search_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_search_box_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dokter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_search_box_klinik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/klinik"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_doctor_box_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_doctor_main_container" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/search_doctor_box_list_view"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_16">
+
+            <LinearLayout
+                android:id="@+id/nav_input_container_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/space_10"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:text="DAFTAR"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"
+                    font:name="Header_Reguler"
+                    font:type="bold" />
+
+                <EditText
+                    android:id="@+id/nav_input_email_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@color/soft_grey"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/space_10"
+                    android:textColorHint="@color/grey_dark" />
+
+                <EditText
+                    android:id="@+id/nav_input_password_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@color/soft_grey"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/space_10"
+                    android:textColorHint="@color/grey_dark" />
+
+                <EditText
+                    android:id="@+id/nav_input_phone_number_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@color/soft_grey"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:padding="@dimen/space_10"
+                    android:textColorHint="@color/grey_dark" />
+
+                <EditText
+                    android:id="@+id/nav_input_birth_date_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@color/soft_grey"
+                    android:hint="Birth Date"
+                    android:padding="@dimen/space_10"
+                    android:textColorHint="@color/grey_dark" />
+
+                <Spinner
+                    android:id="@+id/spinnergender"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/spinner_gender"
+                    android:hint="@string/hint_jenis_kelamin"
+                    android:padding="@dimen/space_5" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:text="@string/syarat_ketentuan"
+                    android:textColor="@color/textColorSecondary"
+                    font:name="Content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_input_container_linear_layout"
+                android:layout_margin="@dimen/space_10"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/registration_action_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/drawer_button_color"
+                    android:text="DAFTAR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/register_button_facebook"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@color/drawer_facebook_background"
+                    android:text="DAFTAR DENGAN FACEBOOK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/register_button_google"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:textSize="@dimen/title_size" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/registration_back_login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:text="Silahkan login di sini."
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    font:name="Label"
+                    font:type="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

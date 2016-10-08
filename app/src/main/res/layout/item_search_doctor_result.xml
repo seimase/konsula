@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_s"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_5"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10"
+    android:paddingTop="@dimen/space_5">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/item_result_search_paging_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/item_result_search_paging_linear_layout"
+            android:background="@color/pink" />
+    </RelativeLayout>
+
+    <com.konsula.app.ui.view.WrapContentViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white" />
+</LinearLayout>

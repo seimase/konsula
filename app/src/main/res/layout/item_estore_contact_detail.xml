@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:autoLink="phone"
+    android:layout_height="wrap_content">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Content"
+        android:id="@+id/tv_estore_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_super_small_size" />
+
+</LinearLayout>

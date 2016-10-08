@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_25"
+            android:gravity="center"
+            android:text="@string/text_teledoc_confirm"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_30"
+            android:paddingTop="@dimen/space_10">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/nama_dokter_teledoc"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/tvNamaDokter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_30">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/hint_special"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/etSpeciality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_30">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/waktu_teledoc1"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_30">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/estore_status"
+                android:textColor="@color/estore_text_color"
+                android:textSize="@dimen/text_size"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/text_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/green_deep"
+                android:textSize="@dimen/text_medium"
+                font:name="Header"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_50"
+            android:paddingRight="@dimen/space_50">
+
+
+        </LinearLayout>
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/positive_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_16"
+            android:background="@drawable/shape_rounded_green"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_16"
+            android:paddingTop="@dimen/space_6"
+            android:text="@android:string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            font:name="Label" />
+    </LinearLayout>
+</LinearLayout>

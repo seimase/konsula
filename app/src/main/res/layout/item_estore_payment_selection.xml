@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:background="@drawable/border_bottom">
+    <RadioButton
+        android:id="@+id/radio_payment_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"/>
+    <ImageView
+        android:id="@+id/img_payment_selection"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_estore_bank_transfer"/>
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/txt_payment_selection"
+        font:name="Content"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textSize="@dimen/text_medium"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:textColor="@color/estore_text_color"
+        android:text="@string/estore_bank_transfer"/>
+</LinearLayout>

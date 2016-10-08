@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_10"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10"
+    android:paddingTop="@dimen/space_10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_150"
+            android:layout_marginBottom="@dimen/space_5"
+            android:background="#F4F4FE"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_result_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space_150"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="Paket perawatan gigi ( Polishing, Stain Removal, dll)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12"
+                font:name="Header_Reguler" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/item_result_practice_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_2"
+                android:layout_marginRight="@dimen/space_2"
+                android:gravity="left"
+                android:text="Klinik Doli"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12"
+                font:name="Header_Reguler" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_5"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:id="@+id/item_result_detail_profile_middle_container_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingRight="@dimen/space_10"
+                    android:paddingTop="@dimen/space_2"
+                    android:weightSum="2">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_code_voucher"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Header_Reguler" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/item_result_voucher_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Header_Reguler"
+                        font:type="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingRight="@dimen/space_10"
+                    android:weightSum="2">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/text_harga_voucher"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Header_Reguler" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/item_result_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/red_deep"
+                        android:textSize="@dimen/space_12"
+                        font:name="Header_Reguler"
+                        font:type="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/item_voucher_content_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingRight="@dimen/space_10"
+                    android:weightSum="2">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:paddingRight="@dimen/space_2"
+                        android:text="@string/hint_phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Header_Reguler" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:id="@+id/item_voucher_contact_detail_layout" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingRight="@dimen/space_10">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginBottom="@dimen/space_2"
+                        android:layout_marginRight="@dimen/space_2"
+                        android:gravity="right"
+                        android:text="@string/text_voucher_valid_until"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Content" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/item_result_valid_until"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginBottom="@dimen/space_2"
+                        android:layout_marginRight="@dimen/space_2"
+                        android:gravity="left"
+                        android:text="Batas"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12"
+                        font:name="Content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

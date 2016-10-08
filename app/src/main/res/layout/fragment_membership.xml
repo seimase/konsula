@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/l_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_marginTop="-5dp"
+            android:visibility="invisible"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_16">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_16"
+                android:src="@color/mdtp_transparent_black" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_7"
+                android:focusable="false"
+                android:paddingTop="0dp"
+                android:text="@string/membership_now"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignEnd="@+id/right_icon1"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/right_icon1"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+
+            <ImageView
+                android:id="@+id/right_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_16"
+                android:src="@color/mdtp_transparent_black"  />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@+id/right_icon1"
+                android:layout_alignLeft="@+id/icon1"
+                android:layout_alignRight="@+id/right_icon1"
+                android:layout_alignStart="@+id/icon1"
+                android:layout_below="@+id/icon1"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/black"
+                android:paddingTop="@dimen/space_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="@dimen/space_4">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_16"
+                android:src="@color/mdtp_transparent_black" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/end_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:paddingTop="0dp"
+                android:text="@string/tgl_berakhir"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignEnd="@+id/right_icon2"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/right_icon2"
+                android:layout_marginRight="@dimen/space_20"
+                android:paddingTop="0dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+
+            <ImageView
+                android:id="@+id/right_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_16"
+                android:src="@color/mdtp_transparent_black"  />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@+id/right_icon2"
+                android:layout_alignLeft="@+id/icon2"
+                android:layout_alignRight="@+id/right_icon2"
+                android:layout_alignStart="@+id/icon2"
+                android:layout_below="@+id/icon2"
+                android:layout_marginTop="@dimen/space_3"
+                android:background="@color/black"
+                android:paddingTop="@dimen/space_5" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgrade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/shape_rounded_green"
+                android:text="UPGRADE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_promo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_view"
+            android:layout_marginTop="@dimen/space_4"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_12">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_3"
+                android:background="@color/black"
+                android:paddingTop="@dimen/space_5" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/promo_header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_30"
+                android:paddingRight="@dimen/size_30"
+                android:layout_marginTop="@dimen/space_7"
+                android:focusable="false"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_30"
+                android:paddingRight="@dimen/size_30"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:paddingTop="0dp"
+                android:textAllCaps="true"
+                android:textColor="@color/green_deep"
+                android:textSize="@dimen/space_18"
+                font:name="Header"
+                font:type="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/promo_header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_30"
+                android:paddingRight="@dimen/size_30"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:paddingTop="0dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_12" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/text_loading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/con_mengunduh_data"
+                font:name="Content" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con_refresh"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

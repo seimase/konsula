@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_result_search_content_container_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:padding="@dimen/space_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/item_result_search_avatar_image_view"
+            android:layout_width="@dimen/profile_width"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_12"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.01" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/item_result_detail_profile_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11">
+
+                    <LinearLayout
+                        android:id="@+id/item_result_detail_profile_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/space_10">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_result_detail_profile_name_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_result_detail_profile_specialis_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:maxEms="15"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_small_size"
+                            font:name="Content" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/item_result_detail_profile_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:maxEms="15"
+                            android:textSize="@dimen/text_small_size"
+                            font:name="Content" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/etLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:maxEms="15"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_small_size"
+                            font:name="Content" />
+
+                        <!--<com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kebon Jeruk, Jakarta Barat"
+                            android:textSize="@dimen/space_10"
+                            font:name="Content" /> -->
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/space_5">
+
+                    <LinearLayout
+                        android:id="@+id/item_result_detail_profile_middle_container_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/item_result_detail_profile_total_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/space_12"
+                                android:isIndicator="true"
+                                android:progressDrawable="@drawable/ratingstar_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/space_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/item_result_detail_profile_total_review_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:gravity="right"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="@dimen/space_2"
+                                android:layout_marginRight="@dimen/space_2"
+                                android:text="+22" />
+
+                            <ImageView
+                                android:id="@+id/item_result_detail_profile_review_image_button"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:scaleType="centerInside"
+                                android:layout_gravity="right|center_vertical"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/review" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_result_detail_profile_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="IDR 260.000,00"
+                    android:textSize="12sp"
+                    font:name="Content" />
+
+                <LinearLayout
+                    android:id="@+id/item_result_detail_profile_book_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:paddingTop="@dimen/space_7"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <com.konsula.app.ui.custom.CustomtextView
+                        font:name="Content"
+                        font:type="bold"
+                        android:paddingRight="@dimen/space_4"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pemesanan"
+                        android:textColor="@color/black" />
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/ic_arrow_direktori"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

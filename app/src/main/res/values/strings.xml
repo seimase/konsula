@@ -1,0 +1,644 @@
+<resources>
+    <!--general-->
+    <string name="app_name">Konsula</string>
+    <string name="choose_ph">Pilih Foto</string>
+    <string name="choose_ph1">Pilih</string>
+    <string name="login_or_register">Login / Register</string>
+    <string name="appointments">Jadwal Saya</string>
+    <string name="help">Bantuan</string>
+    <string name="prac">Tempat Praktek</string>
+    <string name="prac2">Pilih Tempat Praktek</string>
+    <string name="prac3">Mohon Pilih Tempat Praktek</string>
+    <string name="prac4">Mohon Pilih Dokter</string>
+    <string name="share">Bagikan</string>
+    <string name="title_appointment">Janji Temu</string>
+    <string name="billing">Transaksi Saya</string>
+    <string name="purchase">Voucher Saya</string>
+    <string name="profile">Profil Saya</string>
+    <string name="text_profile">PROFIL</string>
+    <string name="membership">Keanggotaan</string>
+    <string name="rateUs">Nilai Kami</string>
+    <string name="history">Riwayat</string>
+    <string name="descriptions">DESKRIPSI</string>
+    <string name="drawer_open">Buka</string>
+    <string name="tulis_ulasan">TULIS ULASAN</string>
+    <string name="drawer_close">Tutup</string>
+    <string name="syarat_ketentuan"><![CDATA[Dengan menekan tombol \"Buat Janji\", saya mengkonfirmasi telah menyetujui Syarat & Ketentuan dan Kebijakan Privasi Konsula]]></string>
+    <string name="tutup">TUTUP</string>
+    <string name="lihat_review">Lihat Review</string>
+    <string name="no_review">Tidak ada Review</string>
+    <string name="lihat_peta"><u>Lihat peta</u></string>
+    <string name="berikan_review">Tulis Ulasan</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="gratis_konsultasi">Konsultasi gratis</string>
+    <string name="mulai_dari">Mulai dari</string>
+    <string name="mulai_dari30k">Mulai dari IDR 30.000</string>
+    <string name="lihat_service_lain">Lihat Selengkapnya({count})</string>
+    <string name="lihat_review_lain">Lihat ulasan lainnya({count})</string>
+    <string name="lihat_sedikit">Lihat sedikit</string>
+    <string name="title_activity_choose_schedule">Pilih Lokasi &amp; Waktu</string>
+    <string name="title_fragment_today">HARI INI,</string>
+    <string name="title_activity_schedule">Jadwal</string>
+    <string name="dialog_checking_validity">Memeriksa jadwal</string>
+    <string name="dialog_title_please_wait">Tunggu sebentar</string>
+    <string name="dialog_title_req">Mengirim permintaan</string>
+    <string name="dialog_title_req_pembiayaan">Mengirim permintaan</string>
+    <string name="dialog_title_send_data">Mengirim informasi</string>
+    <string name="title_activity_booking_confirmation">Masukkan Informasi</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="title_edit_profile">Perbaharui Akun</string>
+    <string name="hint_tanggallahir">Tanggal Lahir</string>
+    <string name="hint_notel">Nomor Telepon</string>
+    <string name="saved">Foto tersimpan</string>
+    <string name="text_must_phone">Nomor Telepon harus di antara 10 - 15 karakter.</string>
+    <string name="text_warning_bloodtype">Golongan darah harus diisi</string>
+    <string name="text_warning_height_weight">Tinggi badan dan berat badan harus diisi</string>
+    <string name="dialog_tele">Tanggal, Nomor Telepon, Alasan, dan Spesialisasi wajib di isi.</string>
+    <string name="hint_alamat">Alamat</string>
+    <string name="hint_jenis_kelamin">Jenis Kelamin</string>
+    <string name="hint_golongan_darah">Golongan darah</string>
+    <string name="hint_tinggibadan">Tinggi Badan</string>
+    <string name="hint_beratbadan">Berat Badan</string>
+    <string name="dialog_register_input_all">Silahkan isi semua informasi</string>
+    <string name="dialog_register_gender_all">Silahkan pilih jenis kelamin</string>
+    <string name="facebook_app_id" translatable="false">162037024142939</string>
+    <string name="title_about_us">Tentang Kami</string>
+    <string name="general_text_dismiss">Tutup</string>
+    <string name="text_phone_wa" translatable="false"><u>+62812 9190 2100</u> (Whatsapp/ SMS)</string>
+    <string name="tittle_copyright_aboutus" translatable="false">\u00a9 2016 Konsula</string>
+    <array name="nav_icon_menu" translatable="false">
+        <item>@drawable/ic_home_inactive</item>
+        <item>@drawable/ic_profile_inactive</item>
+        <item>@drawable/ic_membership_inactive</item>
+        <item>@drawable/ic_transaction_inactive</item>
+        <item>@drawable/ic_voucher_inactive</item>
+        <item>@drawable/ic_appointment_inactive</item>
+        <item>@drawable/ic_shareus_inactive</item>
+        <item>@drawable/ic_rateus_inactive</item>
+        <item>@drawable/ic_about_inactive</item>
+    </array>
+
+    <array name="nav_icon_active_menu" translatable="false">
+        <item>@drawable/ic_home_active</item>
+        <item>@drawable/ic_profile_active</item>
+        <item>@drawable/ic_membership_active</item>
+        <item>@drawable/ic_transaction_active</item>
+        <item>@drawable/ic_voucher_active</item>
+        <item>@drawable/ic_appointment_active</item>
+        <item>@drawable/ic_shareus_active</item>
+        <item>@drawable/ic_rateus_active</item>
+        <item>@drawable/ic_about_active</item>
+    </array>
+
+    <string-array name="server" translatable="false">
+        <item>staging</item>
+        <item>Production</item>
+    </string-array>
+
+    <string-array name="nav_name_menu">
+        <item>Beranda</item>
+        <item>Akun Saya</item>
+        <item>Keanggotaan</item>
+        <item>Transaksi Saya</item>
+        <item>Voucher Saya</item>
+        <item>Jadwal Saya</item>
+        <item>Bagikan Aplikasi</item>
+        <item>Beri Rating</item>
+        <item>Tentang Kami</item>
+
+    </string-array>
+    <string name="nav_myaccount">Akun Saya</string>
+    <string name="nav_editmyaccount">Edit Akun</string>
+    <string name="title_activity_klinik_review">Ulasan</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+
+    <!--conection-->
+    <string name="con_mengunduh_data">Unduh Data</string>
+    <string name="con_refresh">Refresh</string>
+    <string name="hit_segera_hadir">Segera hadir</string>
+    <!--menu utama-->
+
+    <string name="text_hubungi_kami">Hubungi kami di <u>cs@konsula.com,</u></string>
+    <string name="text_selamat_datang">Selamat Datang di</string>
+    <string name="dokter">Dokter</string>
+    <string name="info">INFO</string>
+    <string name="klinik">Klinik</string>
+    <string name="cari">Cari</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="search_lokasi">Tempat Praktek</string>
+    <string name="spesialisasi">Spesialisasi</string>
+    <string name="hint_search">Dokter, Klinik, Spesialisasi, dll.</string>
+    <string name="hint_search_estore">Layanan Gigi, Scaling Gigi, dll.</string>
+    <string name="text_header">Bisa kami bantu?</string>
+    <string name="text_tagline">Tanya Dokter Saja!</string>
+    <string name="text_header1">Kebutuhan Kesehatan Anda</string>
+    <string name="text_direktori">Cari Dokter</string>
+    <string name="text_pembayaran">Pembayaran</string>
+    <string name="text_teledokter">Telepon dengan Dokter</string>
+    <string name="text_chatdokter">Chat dengan Dokter</string>
+    <string name="text_proteksi">Proteksi</string>
+    <string name="text_pembiayaan">Pembiayaan</string>
+    <string name="text_estore">Paket Health &amp; Beauty</string>
+    <string name="text_update_header">Pembaruan Tersedia</string>
+    <string name="text_update">Konsula versi baru sudah tersedia. Mohon Perbarui aplikasi anda.</string>
+    <string name="button_remind">INGATKAN NANTI</string>
+    <string name="button_update">PERBARUI</string>
+    <string name="text_tunggu">Mohon tunggu ...</string>
+    <string name="text_rekomendasi">Rekomendasi</string>
+    <string name="direktori_sort_by">Urutkan</string>
+    <string name="direktori_jadwal_praktek">Jadwal Praktek</string>
+    <string name="direktori_jam_praktek">Jam Praktek</string>
+    <string name="direktori_year_experience">Lama Pengalaman</string>
+    <string name="direktori_year_operation">Lama Beroperasi</string>
+    <string name="direktori_total_year_experience">{year} Tahun</string>
+    <string name="direktori_biaya_konsultasi">Biaya Konsultasi</string>
+
+    <!--login-->
+    <string name="text_login">MASUK</string>
+    <string name="text_login2">Masuk</string>
+    <string name="text_forgot_pass">Lupa Sandi?</string>
+    <string name="text_keep_sign">Keep me signed in</string>
+    <string name="text_ryou_doctor">Anda seorang dokter</string>
+    <string name="tetx_no_account">Tidak Punya akun? Daftar Di sini</string>
+    <string name="text_register">Daftar</string>
+    <string name="text_loginhere">Silahkan login di sini</string>
+    <string name="login_with">atau login dengan</string>
+    <string name="login_wrong_password">Email atau password salah</string>
+    <string name="register_wrong_phone">Nomor Telepon harus di antara 10 \- 15 karakter.</string>
+
+    <!--help-->
+    <string name="text_aboutus_moto">Konsula bekerja untuk membuka akses kesehatan bagi seluruh masyarakat Indonesia</string>
+    <string name="text_aboutus">Untuk mencapai itu, Konsula memulainya dengan memberikan kemudahan bagi masyarakat untuk mencari dan membuat janji dengan dokter yang mereka butuhkan. Konsula juga bekerja untuk meningkatkan kualitas layanan para tenaga medis dan klinik dengan menyediakan aplikasi yang memudahkan mereka dalam mengelola praktek mereka. Pada akhirnya, kami bermimpi untuk membawa sistem kesehatan di Indonesia masuk ke era digital.</string>
+    <string name="tentangkami">Tentang Konsula</string>
+    <string name="termcondition">Syarat &amp; Ketentuan</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="contactus">Hubungi Kami</string>
+    <string name="email">Email</string>
+    <string name="pesan">Pesan</string>
+    <string name="kirim">Kirim</string>
+    <string name="submit">Kirim</string>
+    <string name="text_gagal">Gagal Unduh Data</string>
+    <string name="something_wrong">Something went wrong, or no internet connection.</string>
+    <string name="login_to_server">Login ke server</string>
+
+    <!--lupa password-->
+    <string name="text_lupa">LUPA PASSWORD</string>
+    <string name="text_lupa_detail"> Masukkan email yang lupa kata sandinya</string>
+    <string name="kirim_email">KIRIM EMAIL</string>
+    <string name="petunjuk_lupa">&#42;Periksa e-mail Anda untuk pengecekan instruksi cara reset password Anda, kemudian Anda bisa melakukan Login kembali.</string>
+    <string name="login_kembali">Silahkan login kembali di sini</string>
+    <!--setting-->
+    <string name="pilih_bahasa">Pilihan Bahasa</string>
+    <string name="simpan">Simpan</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="pilih_server">Pilih Server</string>
+
+    <!--account-->
+    <string name="ubahprofile">Ubah Profil Anda</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="keluar">Keluar</string>
+    <string name="text_keluar">Keluar</string>
+    <string name="member_sejak">Member Sejak</string>
+    <string name="text_konsultasi_gratis">Konsultasi gratis</string>
+
+    <!--search-->
+    <string name="pemesanan">Buat Janji</string>
+    <string name="pagi">Pagi</string>
+    <string name="siang">Siang</string>
+    <string name="sore">Sore</string>
+    <string name="malam">Malam</string>
+    <string name="tetx_mulai_dari">mulai dari</string>
+
+    <string name="dokter_rbo">Dokter</string>
+    <string name="klinik_rbo">Klinik</string>
+
+    <string name="dokter_tab">DOKTER</string>
+    <string name="klinik_tab">KLINIK</string>
+
+    <!--profil dokter-->
+    <string name="pendidikan">Pendidikan</string>
+    <string name="riwayat_pekerjaan">Pengalaman</string>
+    <string name="keanggotaan_profesional">Keanggotaan Profesional</string>
+    <string name="penghargaan">Penghargaan</string>
+    <string name="layanan">Layanan</string>
+    <string name="lihat_jadwal">Lihat Jadwal</string>
+    <string name="label_jadwal_praktek">Jadwal Praktek</string>
+    <string name="hint_schedule_notavailable">Maaf, jadwal yang anda pilih tidak tersedia. Mohon untuk memilih jadwal lainnya.</string>
+    <string name="title_dialog_no_schedule">Jadwal Tidak Tersedia</string>
+    <string name="text_no_jadwal">Maaf, Jadwal Dokter belum Tersedia</string>
+
+    <string name="pass">Kata Sandi</string>
+    <string name="passlama">Kata Sandi Lama*</string>
+    <string name="passbaru">Kata Sandi Baru*</string>
+    <string name="ganti_password">Ganti Password</string>
+
+    <string name="title_dialog_booking_confirmation">Konfirmasi</string>
+    <string name="message_dialog_booking_confirmation">Apakah anda yakin untuk melakukan pembuatan janji temu ini?</string>
+    <string name="dialog_accept">Setuju</string>
+    <string name="dialog_decline">Batal</string>
+    <string name="dialog_decline2">Batal</string>
+    <string name="dialog_see_p">Lihat Profil</string>
+    <string name="dialog_choose">Pilih Dokter</string>
+    <string name="kirim_ulang">KIRIM ULANG</string>
+    <string name="kode_konfirmasi">Konde Konfirmasi</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam</string>
+    <string name="menit">Menit</string>
+    <string name="text_bulan">Bulan</string>
+    <string name="text_hari">Hari</string>
+    <string name="text_hari2">Hari</string>
+    <string name="input_verification">MASUKKAN KODE VERIFIKASI YANG DIKIRIMKAN</string>
+    <string name="input_verification2">KE NOMOR ANDA</string>
+    <string name="hint_kodeappoitment">Kode Appointment Anda adalah</string>
+    <string name="hintkodeisi">UNTUK KONFRIMASI RESERVASI</string>
+    <string name="kode_ferifikasi">Kode Verifikasi</string>
+    <string name="text_rumah">Rumah</string>
+    <string name="text_mobil">Mobil</string>
+    <string name="text_motor">Motor</string>
+    <string name="mdtp_ok" translatable="false">@android:string/ok</string>
+
+    <!--appointment page-->
+    <string name="text_terima_kasih">TERIMA KASIH</string>
+    <string name="directory_text_reservation">TELAH MENGGUNAKAN KONSULA</string>
+    <string name="teledoc_text_reservation">TELAH MENGGUNAKAN LAYANAN TELEDOC</string>
+    <string name="text_reservation_reservation">FOR YOUR RESERVATION </string>
+    <string name="daftar_book">DAFTAR &amp; Buat Janji</string>
+    <string name="title_reservation_done">RESERVASI SELESAI</string>
+    <string name="title_header_teledor">Ulasan &amp; Pembayaran</string>
+    <string name="text_no_voucher">Tidak Tersedia Voucher</string>
+    <string name="text_no_data">Tidak Ada Data</string>
+    <string name="text_no_schedule">Tidak Ada Jadwal</string>
+    <string name="text_mytransaction">Transaksi Saya</string>
+    <string name="text_paymentdetails">Detil  pembayaran</string>
+    <string name="text_batal_langganan">Pembatalan Langganan</string>
+    <string name="text_janjibaru">Jadwal Perjanjian Baru</string>
+    <string name="text_janjilama">Jadwal Perjanjian Lama</string>
+    <string name="text_warning_payment_method">Mohon pilih metode pembayaran</string>
+    <string name="text_warning_bank">Mohon pilih rekening</string>
+
+    <string name="text_janjibaru2">Janji Baru</string>
+    <string name="text_janjilama2">Janji Lama</string>
+
+    <string name="upcoming">Akan Datang</string>
+    <string name="past">Telah Selesai</string>
+
+    <!--review appointment-->
+    <string name="label_feedback_for_appointment">Bagaimana kesan Anda terhadap kunjungan Anda?*</string>
+    <string name="label_feedback_to_konsula">Bagaimana penilaian Anda terhadap sistem pelayanan Konsula?</string>
+    <string name="AutoLokasi">Lokasi Otomatis</string>
+    <string name="autolokasi">Lokasi Otomatis</string>
+    <string name="title_activity_review_doctor_form">ReviewDoctorFormActivity</string>
+    <string name="title_activity_review_practice_form">ReviewPracticeFormActivity</string>
+    <string name="title_login_activity">LoginActivity</string>
+    <string name="title_forgot_password_activity">ForgotPasswordActivity</string>
+    <string name="title_register_activity">RegisterActivity</string>
+    <string name="title_forgot_password">Lupa Password</string>
+    <string name="title_activity_doctor_review">ULASAN</string>
+    <string name="title_register">Register</string>
+    <string name="title_facebook">Facebook</string>
+    <string name="title_google">Google</string>
+    <string name="text_review_nilai">Nilai Keseluruhan</string>
+    <string name="text_review_keramahan">Keramahan</string>
+    <string name="text_review_kebersihan">Kebersihan dan Kenyamanan</string>
+    <string name="text_review_waktu">Waktu Tunggu</string>
+    <string name="text_mengunjungi">mengunjungi</string>
+    <string name="text_header_beri_review">Berikan Review</string>
+
+    <!--verifikasi-->
+    <string name="text_verifikasi">Silahkan masukkan kode verifikasi Anda yang dikirim ke nomor {phone_number}</string>
+    <string name="tittle_verifikasi">Verifikasi</string>
+    <string name="text_kirim_ulang">Kirim Ulang Kode</string>
+    <string name="text_ganti_nomer">Ganti Nomor Telepon</string>
+    <string name="text_revie_teledoc">Mohon berikan ulasan dan kemudian tekan \"Bayar Sekarang\" untuk melakukan pembayaran. </string>
+    <string name="text_please_review">Mohon berikan ulasan </string>
+    <string name="text_teledoc_batal">Membatalkan Teledoc</string>
+
+    <!--Spinner gender-->
+
+    <string-array name="spinner_gender">
+        <item>*Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string name="title_conf">Konfirmasi Reservasi</string>
+
+    <!--Teledokter-->
+    <string name="title_teledokter_activity">TeledokterActivity</string>
+    <string name="title_teledokter">Teledoc</string>
+    <string name="title_teledokter_reschedule">Penjadwalan Ulang Teledoc</string>
+    <string name="title_action">Pilih Menu</string>
+    <string name="teledoc_title_action">Upload Foto</string>
+    <string name="title_date_time">Pilih Spesialisasi Dahulu</string>
+    <string name="title_take_photo">Ambil Foto</string>
+    <string name="title_choose">Pilih Foto</string>
+    <string name="title_cancel">Batal</string>
+    <string name="title_reschedule">Jadwalkan Ulang</string>
+    <string name="tele_jam">Pilih Waktu</string>
+    <string name="welcome_teledokter">Selamat datang di Teledoc!</string>
+    <string name="welcome_teledokter2">Maaf, masa keanggotaan Anda telah berakhir.</string>
+    <string name="welcome_teledokter3">Mohon Lakukan Pembayaran</string>
+    <string name="welcome_estore_soon">Welcome to E-Store</string>
+    <string name="teledokter_content">Buat janji dan dokter kami akan menghubungi Anda di nomor {phone} Telepon dengan dokter tidak melayani permintaan resep obat.</string>
+    <string name="chatdokter_content2">Silahkan renew keanggotaan Anda untuk bisa terus menggunakan fitur Chat Dokter!</string>
+    <string name="estore_soon_content">Fitur ini akan segera hadir untuk membantu Anda menemukan paket-paket kesehatan menarik dari berbagai klinik, laboratorium, dan rumah sakit yang bekerja sama dengan kami.</string>
+    <string name="chatdokter_content3">Silahkan upgrade keanggotaan Anda ke PLUS untuk mengakses fitur lengkap Chat Dokter!</string>
+    <string name="chatdokter_header3">Silahkan upgrade keanggotaan Anda.</string>
+    <string name="text_teledoc_gagal">Anda belum melakukan pembayaran layanan Teledoc. Tekan \"Bayar Sekarang\" untuk melakukan pembayaran.</string>
+    <string name="hint_tanggal">Tanggal dan Waktu untuk dihubungi</string>
+    <string name="teledoc_review">Ulasan &amp; Pembayaran</string>
+    <string name="review_status_publish">Telah Diterbitkan</string>
+    <string name="review_status_unpublish">Belum Diterbitkan</string>
+
+
+    <string name="nama_dokter_teledoc">Nama Dokter </string>
+    <string name="waktu_teledoc">Waktu </string>
+    <string name="waktu_teledoc1">Waktu </string>
+    <string name="durasi_teledoc">Durasi Telepon </string>
+    <string name="reason_teledoc">Alasan </string>
+    <string name="hint_special">Spesialisasi</string>
+    <string name="hint_phone">Nomor Telepon</string>
+    <string name="hint_phone2">Kami akan menghubungi Anda di nomor ini.</string>
+    <string name="hint_gambar">Tambahkan gambar (Opsional)</string>
+    <string name="hint_alasan">Alasan (opsional)</string>
+    <string name="btnReq">Meminta panggilan</string>
+    <string name="btnReq2">Renew Sekarang</string>
+    <string name="btnReq3">Bayar Sekarang</string>
+    <string name="free_con">Gratis</string>
+    <string name="text_renew">Perpanjang</string>
+    <string name="text_keluhan">Keluhan Utama</string>
+    <string name="text_gallery">GALERI</string>
+    <string name="text_current_membership">Membership Saat ini</string>
+    <string name="success_req">Request Teledoctor berhasil disimpan.</string>
+    <string name="fail_upload">Upload foto gagal.</string>
+    <string name="information_not_register"> Belum jadi member? Silahkan masukkan informasi Anda untuk mendaftar dan membuat janji temu</string>
+    <string name="information_not_member">Dengan membuat janji temu melalui Konsula, saya menyetujui Syarat &amp; Ketentuan dan Kebijakan Privasi Konsula</string>
+    <string name="text_price_teledoc">Biaya Konsultasi</string>
+    <string name="text_total_cost">Harga Total</string>
+    <string name="text_note">*Anda hanya melakukan pembayaran setelah konsultasi selesai</string>
+    <string name="text_normal_price">Harga normal: </string>
+
+    <!--Pembiayaan-->
+    <string name="title_pembiayaan_activity">PembiayaanActivity</string>
+    <string name="title_pembiayaan">Pembiayaan</string>
+    <string name="text_price">Harga</string>
+    <string name="title_done">Konfirmasi</string>
+    <string name="welcome_pembiayaan">Selamat datang di Pembiayaan!</string>
+    <string name="daftarPembiayaan">Daftar Sekarang</string>
+    <string name="tab1">Tab1Activity</string>
+    <string name="tab2">Tab2Activity</string>
+    <string name="confirmPembiayaan">ConfirmPembiayaanActivity</string>
+    <string name="pembayaranDone">PembayaranDoneActivity</string>
+    <string name="tabspec1">Dengan Jaminan</string>
+    <string name="tabspec2">Tanpa Jaminan</string>
+    <string name="tab1a">Besar Jaminan</string>
+    <string name="text_card_limit">Limit Kartu Kredit</string>
+    <string name="text_bentukjaminan">Bentuk Jaminan</string>
+    <string name="tab1b">Pinjaman Anda</string>
+    <string name="tab2a">Besar Pinjaman</string>
+    <string name="tab2b">Lama Pinjaman</string>
+    <string name="tab2c">Bentuk Jaminan</string>
+    <string name="cicil_per">Cicilan per bulan</string>
+    <string name="idr">IDR 200.000</string>
+    <string name="hint_email">Email</string>
+    <string name="confirm_nama1">Nama Lengkap</string>
+    <string name="confirm_nama">Nama Lengkap </string>
+    <string name="confirm_nama_teledoc">Nama Dokter </string>
+    <string name="confirm_spec_teledoc">Spesialisasi </string>
+    <string name="confirm_stat_teledoc">Status </string>
+    <string name="confirm_waktu">Waktu </string>
+    <string name="confirm_telp">Nomor Handphone </string>
+    <string name="hint_confirm">Booking Anda sudah diconfirm. Kami akan segera menghubungi Anda. Mohon hubungi customer service kami apabila Anda ingin melakukan penggantian jadwal.</string>
+    <string name="hint_confirm_teledoc">Anda akan menerima notifikasi setelah kami mengkonfirmasi permintaan Anda. Mohon hubungi Customer Service kami apabila Anda ingin melakukan penggantian jadwal.</string>
+    <string name="hint_confirm_teledoc1">Jadwal Teledokter Anda telah kami konfirmasi. Dokter kami akan menghubungi Anda di waktu yang tertera di halaman ini. Mohon hubungi Customer Service kami apabila Anda ingin melakukan penggantian jadwal.</string>
+    <string name="hint_confirm_loan">Rekanan kami akan segera menghubungi Anda.</string>
+    <string name="text_tittle_pembiayaan">Isi formulir berikut ini untuk melakukan simulasi pinjaman dan mengajukan pinjaman.</string>
+    <string name="text_warning_empty">Mohon Isi Semua Form</string>
+    <string name="text_submit_pembiayaan">Ajukan Pinjaman</string>
+    <string name="text_pembiayaan_2">Pembiayaan</string>
+    <string name="text_batal_teledok">Anda akan dikenakan denda senilai IDR 20.000 apabila pembatalan dalam kurun waktu 24 jam sebelum jadwal teledoc yang disetujui</string>
+    <string name="text_teledoc_confirm">Jadwal Teledoc Anda telah kami konfirmasi.Dokter kami akan menghubungi Anda di waktu yang tertera.</string>
+    <string name="text_teledoc_pay">Anda belum melakukan pembayaran layanan Teledoc. Tekan \"Lanjutkan\" untuk melakukan pembayaran.</string>
+    <string name="btn_cancel_teledoc">Tidak Setuju</string>
+    <string name="btn_ok_teledoc">Setuju</string>
+    <string name="teledoc_warning_stay">Mohon standby di waktu yang telah ditentukan. Dokter kami akan mencoba menelepon Anda sebanyak 3 kali.</string>
+    <!--chat dokter-->
+    <string name="title_chatdokter">Chat Dokter</string>
+    <string name="welcome_chatdokter">Selamat datang di Chat Dokter!</string>
+    <string name="chatdokter_content">Dokter umum kami siap membantu Anda. Chat dengan Dokter tidak melayani permintaan resep obat.</string>
+
+    <string name="hint_reasonteledoc">Masukkan keluhan Anda</string>
+    <string name="hint_reason">Masukkan keluhan Anda</string>
+    <string name="hint_chat">Chat sekarang</string>
+    <string name="btn_chat">Chat Now</string>
+    <string name="text_warning_review">Harap berikan Review Anda</string>
+    <string name="text_warning_review_comment">Harap isi komentar Anda (minimal 25 karakter)</string>
+
+    <!--register new activity-->
+    <string name="reg_name">Nama</string>
+    <string name="reg_date">Tanggal Lahir</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_password">Kata Sandi</string>
+    <string name="reg_phone">Nomor Telepon</string>
+    <string name="reg_gender">Jenis Kelamin</string>
+    <string name="reg_male">Pria</string>
+    <string name="reg_female">Wanita</string>
+    <string name="register_new">Register</string>
+    <string name="reg_or">atau daftar dengan</string>
+    <string name="text_tos_register">Saya Menyetujui <u>Syarat dan Ketentuan</u> serta <u>Kebijakan Privasi</u> dari Konsula</string>
+    <string name="text_peringatan_tos">Harap Setujui Syarat dan Ketentuan serta kebijakan Konsula</string>
+    <!--coba-->
+    <string name="welcom_head_01">Konsula menghadirkan solusi kesehatan dalam genggaman</string>
+    <string name="welcom_content_01">Temukan segala bentuk pelayanan kesehatan yang dibutuhkan di aplikasi ini.</string>
+    <string name="welcom_head_02">Teledoktor &amp; Chat Dokter</string>
+    <string name="welcom_content_02">Tanyakan masalah kesehatan langsung dengan tim dokter yang berpengalaman dan profesional melalui telepon atau chat</string>
+    <string name="welcom_head_03">E-Store</string>
+    <string name="welcom_content_03">Temukan paket-paket kesehatan menarik dari berbagai klinik, laboratorium dan Rumah Sakit yang bekerja sama dengan kami.</string>
+    <string name="welcom_head_04">Direktori &amp; Buat Janji Online</string>
+    <string name="welcom_content_04">Menemukan dan membuat janji dengan dokter maupun klinik yang sesuai menjadi lebih mudah</string>
+    <string name="welcom_head_05">Pembiayaan </string>
+    <string name="welcom_content_05">Butuh dana untuk membayar tagihan kesehatan? Temukan di Konsula!</string>
+    <!--Forgot Password Validation & Activity-->
+    <string name="email_null">Silahkan isi email anda</string>
+    <string name="email_false">Silahkan Masukkan Email yang tepat</string>
+    <string name="no_connection">Proses gagal dilakukan. Mohon periksa koneksi jaringan internet anda.</string>
+
+    <string name="please_wait">Harap tunggu</string>
+
+    <string name="date_pick">Pilih Tanggal</string>
+    <string name="time_pick">Pilih Jam</string>
+    <string name="locale">indonesia</string>
+
+    <string name="hint_currpass">Masukkan Password Sekarang</string>
+    <string name="hint_newpass">Masukkan Password Baru</string>
+    <string name="validasi_nullAll">Password Lama Dan Password Baru Harus Diisi</string>
+    <string name="validasi_nullOld">Password Lama Harus Diisi</string>
+    <string name="validasi_nullNew">Password Baru Harus Diisi</string>
+    <string name="text_konfirmasi">Konfirmasi</string>
+    <!-- Membership-->
+    <string name="membership_now">Keanggotaan Saat ini</string>
+    <string name="member">Keanggotaan</string>
+    <string name="tgl_berakhir">Tanggal Berakhir</string>
+    <string name="price_per">Harga per Bulan</string>
+    <string name="conv_fee">Convenience Fee</string>
+    <string name="total_cost">Total Biaya</string>
+    <string name="savereq">Menyimpan Permintaan anda</string>
+    <string name="text_ringkasan">Ringkasan</string>
+    <string name="text_ringkasan_teledoc">Ringkasan Teledoc</string>
+    <string name="spec_price">Harga Spesial</string>
+    <string name="currentLoc">Lokasi Saat Ini</string>
+    <string name="upgradenow">Upgrade Sekarang</string>
+    <string name="text_lihat_detail"><u>Selengkapnya</u></string>
+    <string name="text_pembatalan_membership">*Anda dapat membatalkan membership Anda kapan saja tanpa biaya apapun.</string>
+
+    <string name="text_footer">Harga Teledoc adalah untuk satu kali konsultasi dengan durasi 15 menit. Harga diatas dalam Rupiah.</string>
+    <string name="estore_package">Paket</string>
+    <string name="estore_review">Ulasan</string>
+    <string name="estore_howto">Cara Penggunaan Voucher:</string>
+    <string name="estore_paket">Paket:</string>
+    <string name="estore_pay">Bayar</string>
+    <string name="estore_confirm">Konfirmasi</string>
+    <string name="estore_payment">Pembayaran</string>
+    <string name="estore_amount_should_be_paid">JUMLAH YANG HARUS DIBAYARKAN</string>
+    <string name="estore_remaining_payment_time">Sisa waktu pembayaran</string>
+    <string name="estore_see_details">Lihat Selengkapnya</string>
+    <string name="estore_bank_transfer">Bank Transfer</string>
+    <string name="estore_continue">Lanjutkan</string>
+    <string name="estore_product_package">Pilih Paket Produk</string>
+    <string name="estore_estimated_cost">Perkiraan Biaya</string>
+    <string name="estore_review_order">Review Pesanan</string>
+    <string name="estore_item" translatable="false">Item</string>
+    <string name="estore_items" translatable="false">Items</string>
+    <string name="estore_order">Pesanan</string>
+    <string name="estore_convenience_fee">Biaya Kenyamanan</string>
+    <string name="estore_promotion_code">Kode Promosi</string>
+    <string name="estore_total_cost">Harga Total</string>
+    <string name="estore_by_checking_this_box"><![CDATA[Dengan mencentang kotak ini, saya mengkonfirmasikan bahwa saya setuju dengan Syarat & Ketentuan dan Kebijakan Privasi dari Konsula]]></string>
+    <string name="estore_finalize_transaction">Selesaikan Transaksi</string>
+    <string name="estore_invoice_no">INVOICE NO</string>
+    <string name="estore_step_1">LANGKAH 1</string>
+    <string name="estore_please_do_the_payment">Mohon lakukan pembayaran dalam waktu </string>
+    <string name="estore_please_ensure_you_have_transferred">Mohon pastikan Anda mentransfer secara persis sejumlah</string>
+    <string name="estore_destination_bank">Bank Tujuan</string>
+    <string name="estore_recipients_name">Nama Penerima</string>
+    <string name="estore_branch">Cabang</string>
+    <string name="estore_account_no">No. Rekening</string>
+    <string name="estore_step_2">LANGKAH 2</string>
+    <string name="estore_please_upload_proof_of_payment">Mohon upload bukti pembayaran untuk mempercepat verifikasi</string>
+    <string name="estore_upload_proof_of_payment">Upload Bukti Pembayaran</string>
+    <string name="estore_have_you_transferred">Anda sudah mentransfer? Mohon lanjutkan dengan menekan pilihan di bawah ini</string>
+    <string name="estore_payment_has_done">Saya telah melakukan pembayaran</string>
+    <string name="estore_thank_you">TERIMA KASIH</string>
+    <string name="text_logout">Apakah anda yakin untuk keluar?</string>
+    <string name="text_close">Apakah anda yakin untuk menutup aplikasi?</string>
+    <string name="estore_for">Untuk</string>
+    <string name="text_yes">Ya</string>
+    <string name="text_no">Tidak</string>
+    <string name="estore_confirming_your_payment">Konfirmasi Pembayaran Anda</string>
+    <string name="estore_item_2" translatable="false">Item</string>
+    <string name="estore_price">Harga</string>
+    <string name="estore_convenience_fee_2">Biaya Kenyamanan</string>
+    <string name="estore_your_payment_will_be_verified">Pembayaran Anda akan segera diverifikasi oleh admin kami.</string>
+    <string name="estore_status" translatable="false">Status</string>
+    <string name="estore_confirmed">TERKONFIRMASI</string>
+    <string name="estore_take_photo">Ambil Gambar</string>
+    <string name="estore_choose_existing">Pilih Gambar yang Sudah Ada</string>
+    <string name="text_review_teledoc">Pendapat Anda atas layanan yang diberikan(Optional)</string>
+    <string name="text_gunakan">Gunakan</string>
+    <string name="estore_no_product">Tidak ada produk</string>
+    <string name="estore_expired_product">Promosi Ini Berlaku Sampai {datetime}</string>
+    <string name="estore_validity_product">Batas akhir penggunaan voucher paling lambat {days} hari, terhitung dari tanggal pembelian voucher Anda</string>
+    <string name="estore_button_buy">Beli</string>
+    <string name="estore_button_cs">Tanya CS</string>
+    <string name="estore_tab_popular">Terpopuler</string>
+    <string name="estore_tab_nearest">Terdekat</string>
+    <string name="estore_description">Deskripsi</string>
+    <string name="estore_related">Sejenis</string>
+    <string name="estore_filter">Filter</string>
+    <string name="estore_reset">Reset</string>
+    <string name="estore_see_all">Lihat semua</string>
+    <string name="estore_update">Perbarui</string>
+    <string name="estore_voucher_name">Nama Voucher</string>
+    <string name="text_estore_main">Temukan paket-paket kesehatan dengan harga terbaik dari berbagai klinik, lab, dan rumah sakit yang bekerja sama dengan kami.</string>
+    <string name="estore_you_must_choose_at_least_one_item_to_order">Anda harus memilih sekurang-kurangnya 1 item untuk dipesan</string>
+    <string name="estore_use_your_promotion_code">Gunakan kode promosi dan dapatkan potongan harga untuk transaksi anda</string>
+    <string name="estore_use">Gunakan</string>
+    <string name="estore_invalid_promo_code">Kode promosi salah</string>
+    <string name="estore_input_your_promotion_code">Masukkan kode promosi</string>
+    <string name="estore_you_must_confirm_the_agreement_to_continue">Anda harus menyetujui persetujuan untuk melanjutkan</string>
+    <string name="estore_search_category">Layanan Gigi, Scalling Gigi, dll</string>
+    <string name="estore_tab_left">Terpopuler</string>
+    <string name="estore_empty_stock">Terjual habis</string>
+    <string name="payment_promocode_info">{promo_code} (potongan harga {price})</string>
+
+    <string name="text_feedback">Mohon isi kesan anda (min 50 karakter)</string>
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+    <string name="text_teledoc_reschedule_header">Maaf, jadwal Teledoc yang Anda pilih tidak tersedia. Apakah Anda bersedia untuk dijadwal ulang ke tanggal dan waktu berikut ini?</string>
+    <string name="text_teledoc_reschedule_footer">Jika tidak, tekan tombol Reschedule dan Customer Service kami akan membantu Anda menjadwal ulang janji Teledoc Anda.</string>
+    <string name="text_teledoc_reschedule_confirm">Apakah Anda yakin penjadwalan ulang ke %1$s, %2$s ?</string>
+    <string name="text_teledoc_reschedule">Apakah Anda yakin untuk jadwal ulang? Admin kami akan segera menghubungi anda</string>
+    <string name="text_teledoc_cancel">Jadwal Teledoc Anda telah dibatalkan.</string>
+    <string name="text_reschedule_information">Silahkan menunggu, tim Customer Service kami akan menghubungi Anda untuk menjadwal ulang janji Teledoc Anda.</string>
+    <string name="text_teledoc_cancel_appointment">Batal</string>
+    <string name="text_paymentsummary">Jumlah Yang Harus Dibayarkan</string>
+    <string name="text_membership_exit">Transaksi anda tetap berjalan dan dapat dilihat melalui halaman <b>Transaksi Saya</b></string>
+    <string name="text_maaf">Maaf</string>
+    <string name="text_expired_ket">Transaksi anda melebihi batas waktu</string>
+    <string name="text_sukses_upload">Upload sukes</string>
+    <string name="text_dialog_expired">Waktu pembayaran anda telah berakhir</string>
+    <string name="estore_payment_summary">Rincian Pembayaran</string>
+
+    <string name="text_tos1">Saya menyetujui</string>
+    <string name="text_syaaratdanketentuan"><u>Syarat dan Ketentuan</u> </string>
+    <string name="text_tos2">serta</string>
+    <string name="text_kebijakanprivasi"> <u>Kebijakan Privasi</u></string>
+    <string name="text_tos3"> dari Konsula</string>
+    <string name="text_header_transaction_cancel">Pembatalan Transaksi</string>
+    <string name="text_content_transaction_cancel">Apakah anda yakin untuk membatalkan transaksi ?</string>
+    <string name="text_transaction_cancel_ok">Ya, batalkan</string>
+    <string name="text_hint_promo_code">Masukan kode promosi</string>
+    <string name="text_promo_code">Gunakan kode promosi dan dapatkan potongan harga untuk transaksi anda</string>
+
+
+    <string name="text_first_name">Nama Depan</string>
+    <string name="text_last_name">Nama Belakang</string>
+    <string name="text_card_number">Nomor Kartu</string>
+    <string name="text_zip_code">Kode Pos</string>
+    <string name="text_cvv">CVV</string>
+    <string name="text_expiration_date">Masih Berlaku</string>
+    <string name="text_transaction_failed">Transaksi Gagal</string>
+
+    <!--voucher-->
+    <string name="text_voucher_valid">Masih Berlaku</string>
+    <string name="text_voucher_expired">Expired</string>
+    <string name="text_card_number_input">Data kartu tidak valid</string>
+    <string name="slash">&#47;</string>
+    <string name="text_info_teledoc">*Pembayaran dilakukan setelah konsultasi selesai</string>
+    <string name="text_harga_voucher">Harga Voucher</string>
+    <string name="voucher_tab_left">Masih Berlaku</string>
+    <string name="text_code_voucher">Kode Voucher</string>
+    <string name="text_voucher_valid_until">Gunakan sebelum</string>
+    <string name="text_creditcard_amount">Nilai minimum harga total yang diperbolehkan adalah IDR 10.000</string>
+
+    <string name="text_bebas">SEMUA</string>
+    <string name="text_senin">S</string>
+    <string name="text_selasa">S</string>
+    <string name="text_rabu">R</string>
+    <string name="text_kamis">K</string>
+    <string name="text_jumat">J</string>
+    <string name="text_sabtu">S</string>
+    <string name="text_minggu">M</string>
+    
+    <string name="text_book_tos">Dengan menekan tombol \"Buat Janji\",</string>
+    <string name="text_book_tos1">saya mengkonfirmasi telah menyetujui</string>
+    <string name="text_book_syaaratdanketentuan"><u>Syarat &amp; Ketentuan</u> </string>
+    <string name="text_book_tos2">dan</string>
+    <string name="text_book_kebijakanprivasi"> <u>Kebijakan Privasi</u></string>
+    <string name="text_book_tos3"> Konsula</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/item_klinik_profile_service_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Braces"
+        android:textColor="@color/textColorBase"
+        android:textSize="@dimen/text_size"
+        font:name="Content" />
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/item_klinik_profile_service_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Braces"
+        android:textColor="@color/textColorBase"
+        android:textSize="@dimen/text_size"
+        font:name="Content" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:font="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingTop="@dimen/space_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:paddingLeft="@dimen/space_20"
+                android:paddingRight="@dimen/space_10"
+                android:id="@+id/item_review_message_text_view"
+                font:name="Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_super_small_size"
+                android:text="Took 24 hours from placing my order to receding my delivery. Excellent customer service... Quick and efficient." />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_20"
+                android:paddingTop="@dimen/space_10">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_review_name_text_view"
+                    font:name="Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rachel Kay"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_super_small_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_super_small_size"/>
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/item_review_date_text_view"
+                    font:name="Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oktober 24, 2015"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_super_small_size" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/space_5"
+                android:id="@+id/review_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/navigationBarColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

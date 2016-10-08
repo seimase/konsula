@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_grey">
+
+    <ProgressBar
+        android:id="@+id/doctor_profile_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/doctor_profile_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <com.konsula.app.ui.custom.CustomButton
+            android:id="@+id/doctor_profile_book_action_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"
+            android:text="@string/pemesanan"
+            android:textColor="@color/soft_grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            font:name="Label"
+            font:type="bold" />
+
+        <RelativeLayout
+            android:id="@+id/doctor_profile_header_container_relative_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/soft_grey">
+
+            <ImageView
+                android:id="@+id/doctor_profile_cover_page_image_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cover_height"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/doctor_profile_cover_gape_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_profile_cover_page_image_view"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:onClick="saveReview">
+
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/btn_beri_ulasan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@drawable/shape_textview_rounded_pink"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/space_5"
+                        android:paddingRight="@dimen/space_5"
+                        android:text="@string/tulis_ulasan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_super_small_size"
+                        android:textStyle="bold"
+                        font:name="Label" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/doctor_profile_cover_page_image_view">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cover_height"
+                    android:alpha="0.3"
+                    android:background="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/doctor_profile_back_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_7"
+                    android:paddingBottom="@dimen/space_2"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_back" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/doctor_profile_avatar_image_view"
+                android:layout_width="@dimen/profile_width"
+                android:layout_height="@dimen/profile_height"
+                android:layout_alignBottom="@id/doctor_profile_cover_gape_linear_layout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/doctor_profile_avatar_image_view"
+                android:layout_below="@id/doctor_profile_avatar_image_view"
+                android:layout_marginTop="@dimen/space_5"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/space_5">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/profile_doctor_name_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        font:name="Label" />
+
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/profile_doctor_spesialis_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        font:name="Label" />
+                    <!--
+                                        <TextView
+                                            android:id="@+id/profile_doctor_recommendation_text_view"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="22 rekomendasi"
+                                            android:textColor="@color/textColorSecondary"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+                                        -->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:onClick="btnseereview"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/space_5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RatingBar
+                            android:id="@+id/doctor_rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="@dimen/space_20"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressDrawable="@drawable/ratingstar"
+                            android:rating="3.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/doctor_profile_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_2"
+                            android:text="17"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/text_size"
+                            font:name="Label" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="@dimen/space_20"
+                            android:src="@drawable/review" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/doctor_profile_book_action_button"
+            android:layout_below="@id/doctor_profile_header_container_relative_layout"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:elevation="0dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/profile_doctor_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/header_pink"
+                        app:tabIndicatorHeight="3dp"
+                        app:tabMode="fixed"
+                        app:tabPaddingBottom="-1dp"
+                        app:tabPaddingEnd="-1dp"
+                        app:tabPaddingStart="-1dp"
+                        app:tabPaddingTop="-1dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/header_pink" />
+                </android.support.design.widget.AppBarLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/profile_doctor_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

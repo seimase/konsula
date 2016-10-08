@@ -1,0 +1,105 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="profile_height">85dp</dimen>
+    <dimen name="profile_width">75dp</dimen>
+
+    <dimen name="cover_height">150dp</dimen>
+    <dimen name="map_height">180dp</dimen>
+
+    <dimen name="text_size_webview">4sp</dimen>
+    <dimen name="avatar_width">60dp</dimen>
+    <dimen name="avatar_height">80dp</dimen>
+    <dimen name="booking_info_width">250dp</dimen>
+    <dimen name="pembiayaan_success_width">230dp</dimen>
+    <dimen name="pembiayaan_done_width">350dp</dimen>
+    <dimen name="icon_height">72dp</dimen>
+    <dimen name="underline_height">21.6dp</dimen>
+    <dimen name="text_super_small_size">11sp</dimen>
+    <dimen name="text_small_size">12sp</dimen>
+    <dimen name="text_tab_size">10sp</dimen>
+    <dimen name="text_size">13sp</dimen>
+    <dimen name="tag_size">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="title_size">22sp</dimen>
+    <dimen name="size_27">27sp</dimen>
+    <dimen name="size_30">30sp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_7">7dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_11">11dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_21">21dp</dimen>
+    <dimen name="space_22">22dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_19">19dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_28">28dp</dimen>
+    <dimen name="drawer_nav_width">240dp</dimen>
+    <dimen name="drawer_nav_item_height">48dp</dimen>
+    <dimen name="picture_avatar_width">40dp</dimen>
+    <dimen name="picture_avatar_height">40dp</dimen>
+    <dimen name="image_height">350dp</dimen>
+    <dimen name="video_height">200dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_53">53dp</dimen>
+    <dimen name="space_55">55dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_45">45dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_65">65dp</dimen>
+    <dimen name="space_70">73dp</dimen>
+    <dimen name="space_80">80dp</dimen>
+    <dimen name="space_82">82dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_9">9dp</dimen>
+    <dimen name="space_75">75dp</dimen>
+    <dimen name="space_85">85dp</dimen>
+    <dimen name="space_90">90dp</dimen>
+    <dimen name="space_187">188dp</dimen>
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="space_140">140dp</dimen>
+    <dimen name="space_150">150dp</dimen>
+    <dimen name="space_160">160dp</dimen>
+    <dimen name="space_225">225dp</dimen>
+    <dimen name="space_nav">2dp</dimen>
+    <dimen name="padding_horizontal_side_video">30dp</dimen>
+    <dimen name="padding_vertical_side_video">15dp</dimen>
+    <dimen name="padding_horizontal_outer_side_video">32dp</dimen>
+    <dimen name="padding_vertical_outer_side_video">17dp</dimen>
+
+    <dimen name="corner">5dp</dimen>
+    <dimen name="circle_size">27dp</dimen>
+    <dimen name="circle_radio_size">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_margin">260dp</dimen>
+
+
+    <!--Welcome sliding page  -->
+    <dimen name="welcome_images_size">360.0dip</dimen>
+    <dimen name="welcome_images_margin_top">0.0dip</dimen>
+    <dimen name="welcome_heading_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_text_margin">30.0dip</dimen>
+    <dimen name="welcome_heading">24.0sp</dimen>
+    <dimen name="welcome_text_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_content_min_height">40.0dip</dimen>
+    <dimen name="welcome_content">16.0sp</dimen>
+    <dimen name="toolbar_text_size">17dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="estore_product_width">140dp</dimen>
+    <dimen name="estore_product_height">100dp</dimen>
+
+</resources>

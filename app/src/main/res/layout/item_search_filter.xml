@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/spesialisasi_item_search_filter_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/space_10">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/name_item_search_filter_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_weight="7"
+        android:ellipsize="end"
+        android:text="Name"
+        android:textColor="@color/textColorBase"
+        android:textSize="12dp"
+        font:name="Label" />
+
+    <ImageView
+        android:id="@+id/kategori_item_search_filter_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.5"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true" />
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/kategori_item_search_filter_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_weight="3"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="Category"
+        android:textColor="@color/textColorHint"
+        android:textSize="12dp"
+        font:name="Content" />
+</LinearLayout>

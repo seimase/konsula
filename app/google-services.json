@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "konsula-7bddf",
+    "project_number": "210985487785",
+    "name": "Konsula"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210985487785:android:0d6f30fd0d16f355",
+        "client_id": "android:com.konsula.app",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.konsula.app",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210985487785-hal111427ecf1lj3sn6tnb5jl4amr6ct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.konsula.app",
+            "certificate_hash": "ADB437CC235381F02D5CC63A2FB025ACBF0050B6"
+          }
+        },
+        {
+          "client_id": "210985487785-gpv03elapnvgkuq6pvo33k0k8cm2b1vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

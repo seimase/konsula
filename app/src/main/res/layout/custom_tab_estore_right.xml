@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:font="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Label"
+        font:type="bold"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:textSize="11sp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="@drawable/estore_tab_text_selector"
+        android:background="@drawable/estore_tab_selector_right"
+        android:singleLine="true"
+        android:text="Sample Title"/>
+
+</RelativeLayout>

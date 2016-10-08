@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activity.payment.PaymentConfirmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingTop="@dimen/space_10">
+
+            <ImageView
+                android:id="@+id/alertClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="close"
+                android:src="@drawable/ic_close" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/estore_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                font:type="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <Button
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="@string/con_refresh"
+                android:visibility="gone" />
+            <LinearLayout
+                android:id="@+id/l_loading"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:id="@+id/loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/text_loading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/con_mengunduh_data" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/l_view">
+
+            <com.konsula.app.ui.view.EstorePaymentStepView
+                android:id="@+id/payment_step_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_below="@+id/payment_step_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:orientation="vertical">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_thanks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="@dimen/space_12"
+                        android:text="@string/estore_thank_you"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/size_27"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_untuk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/estore_for"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/space_14"
+                        font:name="Label" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_keterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/space_14"
+                        android:text="@string/estore_confirming_your_payment"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/text_medium"
+                        font:name="Label" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/space_16"
+                        android:text="@string/estore_invoice_no"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/space_14"
+                        font:name="Label" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/text_invoicenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/space_4"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/space_25"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_25"
+                        android:layout_marginRight="@dimen/space_25"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/space_8"
+                        android:paddingLeft="@dimen/space_16"
+                        android:paddingRight="@dimen/space_16"
+                        android:paddingTop="@dimen/space_8">
+
+                        <LinearLayout
+                            android:id="@+id/layout_item_transaction_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_2"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/estore_convenience_fee_2"
+                                android:textColor="@color/estore_text_color"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content" />
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/text_confenence_fee"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:textColor="@color/pink"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_bottom"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/space_8">
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/membership_text_detail_promocode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/estore_promotion_code"
+                                android:textColor="@color/estore_text_color"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content" />
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/detail_item_promo_code"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:textColor="@color/pink"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/space_8">
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/estore_total_cost"
+                                android:textColor="@color/estore_text_color"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content"
+                                font:type="bold" />
+
+                            <com.konsula.app.ui.custom.CustomtextView
+                                android:id="@+id/text_total_price"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:textColor="@color/estore_text_color"
+                                android:textSize="@dimen/text_size"
+                                font:name="Content"
+                                font:type="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/ket_membership"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:background="@drawable/border_top"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/space_16"
+                        android:paddingRight="@dimen/space_16"
+                        android:paddingTop="@dimen/space_16"
+                        android:text="@string/estore_your_payment_will_be_verified"
+                        android:textColor="@color/estore_text_color"
+                        android:textSize="@dimen/text_size"
+                        font:name="Content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/space_16"
+                        android:layout_marginTop="@dimen/space_16"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/text_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:textColor="#5dc1a6"
+                            android:textSize="@dimen/space_25"
+                            font:name="Content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_30"
+                        android:src="@drawable/ic_logo2" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

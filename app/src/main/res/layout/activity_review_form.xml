@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.konsula.app.ui.activity.direktori.ReviewDoctorFormActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/l_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/text_loading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/con_mengunduh_data" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con_refresh"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/l_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_header_container"
+        android:visibility="invisible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_45">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/profile_cover_page_image_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/cover_height"
+                        android:layout_alignParentTop="true"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:id="@+id/profile_cover_gape_linear_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/profile_cover_page_image_view"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/doctor_profile_avatar_image_view"
+                        android:layout_width="@dimen/profile_width"
+                        android:layout_height="@dimen/profile_height"
+                        android:layout_alignBottom="@id/profile_cover_gape_linear_layout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:id="@+id/profile_identity_linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/profile_cover_gape_linear_layout"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/doctor_profile_avatar_image_view"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/space_5">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/review_name_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/red_deep"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:id="@+id/review_desc_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            font:name="Content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginRight="@dimen/space_20">
+
+                    <Spinner
+                        android:id="@+id/review_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/space_40"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/text_review_keramahan"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <RatingBar
+                            android:id="@+id/point_friendly_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:isIndicator="false"
+                            android:progressDrawable="@drawable/ratingstar"
+                            android:stepSize="1.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/text_review_kebersihan"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <RatingBar
+                            android:id="@+id/point_facility_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:isIndicator="false"
+                            android:progressDrawable="@drawable/ratingstar"
+                            android:stepSize="1.0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <com.konsula.app.ui.custom.CustomtextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/text_review_waktu"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            font:name="Content"
+                            font:type="bold" />
+
+                        <RatingBar
+                            android:id="@+id/point_timing_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:isIndicator="false"
+                            android:progressDrawable="@drawable/ratingstar"
+                            android:stepSize="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_20">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/label_feedback_for_appointment"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        font:name="Content"
+                        font:type="bold" />
+
+                    <EditText
+                        android:id="@+id/feedback_from_user_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/soft_grey"
+                        android:gravity="top"
+                        android:padding="8dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_20">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/label_feedback_to_konsula"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        font:name="Content"
+                        font:type="bold" />
+
+                    <EditText
+                        android:id="@+id/feedback_to_konsula_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/soft_grey"
+                        android:gravity="top"
+                        android:padding="8dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.konsula.app.ui.custom.CustomButton
+            android:id="@+id/doctor_profile_book_action_button"
+            android:onClick="kirim"
+            android:text="@string/kirim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="none"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"
+            android:textColor="@color/soft_grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            font:name="Label"
+            font:type="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_header_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:padding="@dimen/space_5">
+
+        <ImageButton
+            android:id="@+id/close_action_contact_us_image_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:onClick="back"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_action_back" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="skip"
+            android:padding="@dimen/space_5"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:visibility="gone"
+            font:name="Label"
+            font:type="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/filter_result_image_button"
+            android:layout_alignRight="@+id/filter_result_image_button"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/berikan_review"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text_size"
+                android:textStyle="bold"
+                font:name="Label"
+                font:type="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/review_name_title_text_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                font:name="Content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

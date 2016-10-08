@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/about_us_header_container_relative_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/pembiayaan_blue"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_10">
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/title_done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text_size"
+                font:name="Label" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/about_us_header_container_relative_layout"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_10">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_40"
+                android:gravity="center_horizontal"
+                android:text="@string/text_terima_kasih"
+                android:textColor="@color/textColorBase"
+                android:textSize="@dimen/size_27"
+                font:name="Label"
+                font:type="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_30"
+                android:gravity="center_horizontal"
+                android:text="@string/teledoc_text_reservation"
+                android:textColor="@color/textColorBase"
+                android:textSize="@dimen/text_medium"
+                font:name="Label" />
+
+            <LinearLayout
+                android:layout_width="@dimen/pembiayaan_done_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/confirm_nama"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        android:textStyle="bold"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:text="Ronald Wijaya"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        font:name="Content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.00"
+                        android:text="Email:"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        android:textStyle="bold"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:text="22 Okt 2015, 11:30 WIB"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        font:name="Content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/confirm_telp"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        android:textStyle="bold"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:text="0811826452"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_small_size"
+                        font:name="Content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/pembiayaan_success_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_30"
+                    android:gravity="center_horizontal"
+                    android:text="@string/hint_confirm_loan"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    font:name="Label" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_70"
+                android:layout_marginTop="@dimen/space_150"
+                android:src="@drawable/ic_logo2" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

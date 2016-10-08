@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.konsula.app.ui.custom.CustomtextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_dp_general"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_5"
+    android:gravity="center_vertical"
+    android:textColor="@color/textColorSecondary"
+    android:textSize="@dimen/text_super_small_size"
+    font:name="Content" />

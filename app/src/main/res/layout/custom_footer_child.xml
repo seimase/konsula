@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/space_25"
+    android:paddingRight="@dimen/space_25"
+    >
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/text_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="@dimen/space_40"
+        android:text="@string/text_footer"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+</RelativeLayout>

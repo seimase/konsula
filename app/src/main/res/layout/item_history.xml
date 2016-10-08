@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingRight="6dp"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/doctor_name_item_history_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_size"
+                android:textStyle="bold"
+                font:name="Content"
+                font:type="bold" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/location_name_item_history_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small_size"
+                font:name="Content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/doctor_date_item_history_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:textSize="@dimen/text_small_size"
+                    font:name="Content" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/doctor_time_item_history_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:textSize="@dimen/text_small_size"
+                    font:name="Content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/doctor_purpose_item_history_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small_size"
+                font:name="Content" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/doctor_action_review_item_history_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:text="Berikan Review"
+                android:textSize="@dimen/text_small_size"
+                font:name="Content"
+                font:type="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/contentInputTeledokter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@color/white" />
+
+            <EditText
+                android:id="@+id/etBentukJaminan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentRight="true"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@android:color/transparent"
+                android:hint="@string/tab2c"
+                android:paddingTop="0dp"
+                android:textSize="@dimen/space_12" />
+
+            <ImageView
+                android:id="@+id/right_icon3"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14"
+                android:layout_marginEnd="@dimen/space_25"
+                android:layout_marginRight="@dimen/space_25"
+                android:src="@drawable/arrow_right_grey"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@+id/right_icon3"
+                android:layout_alignLeft="@+id/icon3"
+                android:layout_alignRight="@+id/right_icon3"
+                android:layout_alignStart="@+id/icon3"
+                android:layout_below="@+id/etBentukJaminan"
+                android:background="#939597" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@color/white" />
+
+            <EditText
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/etBesarJaminan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@android:color/transparent"
+                android:hint="@string/tab2a"
+                android:paddingTop="0dp"
+                android:textSize="@dimen/space_12" />
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_25"
+                android:src="@drawable/arrow_right_grey" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@+id/right_icon"
+                android:layout_alignLeft="@+id/icon"
+                android:layout_alignRight="@+id/right_icon"
+                android:layout_alignStart="@+id/icon"
+                android:layout_below="@+id/etBesarJaminan"
+                android:background="#939597" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@color/white" />
+
+            <EditText
+                android:id="@+id/etLamaJaminan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/space_25"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:hint="@string/tab2b"
+                android:paddingTop="0dp"
+                android:textSize="@dimen/space_12" />
+
+            <ImageView
+                android:id="@+id/right_icon2"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14"
+                android:layout_marginEnd="@dimen/space_25"
+                android:layout_marginRight="@dimen/space_25"
+                android:src="@drawable/arrow_right_grey"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@+id/right_icon2"
+                android:layout_alignLeft="@+id/icon2"
+                android:layout_alignRight="@+id/right_icon2"
+                android:layout_alignStart="@+id/icon2"
+                android:layout_below="@+id/etLamaJaminan"
+                android:background="#939597" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_30"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cicil_per"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                font:name="Label" />
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/tvIdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                font:name="Header" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_xxl" />
+
+        <RelativeLayout
+            android:id="@+id/btnRequest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/scrollview1"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:text="@string/text_submit_pembiayaan"
+                    android:textSize="@dimen/text_medium"
+                    font:name="Label" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_27"
+                        android:layout_height="@dimen/size_27"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/arrow_right_pembiayaan" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

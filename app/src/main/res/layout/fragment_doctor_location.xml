@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_20">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingLeft="@dimen/space_10">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_point_map" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:orientation="vertical">
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/doctor_location_name_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Klinik Gigi Jaya"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_super_small_size"
+                        font:name="Label"
+                        font:type="bold" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/doctor_location_category_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Gedung Abadi"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_super_small_size"
+                        font:name="Content" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/doctor_location_address_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="Jl.Sudirman Kav. 49, Jakarta Pusat"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_super_small_size"
+                        font:name="Content" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/practice_image_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:background="@color/white" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/tvSeeMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="@string/lihat_peta"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_super_small_size"
+                        font:name="Label"
+                        font:type="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10">
+
+                <ImageView
+                    android:id="@+id/profile_doctor_schedule_image_view"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_jam" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_toRightOf="@id/profile_doctor_schedule_image_view"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/doctor_location_schedule_recycler"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+                    <com.konsula.app.ui.custom.CustomtextView
+                        android:id="@+id/profile_doctor_location_show_schedule_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/space_10"
+                        android:text="@string/lihat_jadwal"
+                        android:textColor="@color/textColorBase"
+                        android:textSize="@dimen/text_super_small_size"
+                        font:name="Label"
+                        font:type="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/space_10">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_harga" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/doctor_location_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:gravity="center_vertical"
+                    android:text="IDR 300.000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_super_small_size"
+                    android:textStyle="bold"
+                    font:name="Content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:background="@color/grey_dark"
+                android:orientation="vertical" />
+
+
+            <LinearLayout
+                android:id="@+id/doctor_location_review_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_25"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <com.konsula.app.ui.custom.CustomtextView
+                android:id="@+id/doctor_review_other_review_text_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="Lihat review lainnya (78)"
+                android:textColor="@color/textColorBase"
+                android:textSize="@dimen/text_super_small_size"
+                font:name="Label"
+                font:type="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

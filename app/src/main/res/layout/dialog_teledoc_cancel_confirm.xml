@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:font="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/bg_dialog_teledoc"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_10">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/space_40"
+        android:paddingLeft="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_25"
+        android:gravity="center"
+        android:text="@string/text_batal_teledok"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/positive_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginRight="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_16"
+        android:background="@drawable/shape_rounded_softblue"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/space_25"
+        android:paddingRight="@dimen/space_25"
+        android:paddingTop="@dimen/space_8"
+        android:text="@string/btn_cancel_teledoc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        font:name="Label" />
+</LinearLayout>
+</RelativeLayout>

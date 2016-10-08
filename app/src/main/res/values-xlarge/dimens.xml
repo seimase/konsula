@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_height">160dp</dimen>
+    <dimen name="profile_width">150dp</dimen>
+
+    <dimen name="avatar_width">120dp</dimen>
+    <dimen name="avatar_height">160dp</dimen>
+    <dimen name="booking_info_width">280dp</dimen>
+    <dimen name="cover_height">300dp</dimen>
+    <dimen name="map_height">350dp</dimen>
+    <dimen name="icon_height">144dp</dimen>
+
+    <dimen name="space_75">150.00dp</dimen>
+    <dimen name="underline_height">43.2dp</dimen>
+    <dimen name="text_super_small_size">20sp</dimen>
+    <dimen name="text_small_size">24sp</dimen>
+    <dimen name="text_size">26sp</dimen>
+    <dimen name="text_medium">32sp</dimen>
+    <dimen name="text_tab_size">18sp</dimen>
+    <dimen name="tag_size">28sp</dimen>
+    <dimen name="title_size">40sp</dimen>
+    <dimen name="space_5">10dp</dimen>
+    <dimen name="space_3">6dp</dimen>
+    <dimen name="space_11">22dp</dimen>
+    <dimen name="space_7">14dp</dimen>
+    <dimen name="space_2">4dp</dimen>
+    <dimen name="space_10">20dp</dimen>
+    <dimen name="space_12">24dp</dimen>
+    <dimen name="space_14">28dp</dimen>
+    <dimen name="space_16">32dp</dimen>
+    <dimen name="toolbar_text_size">34dp</dimen>
+    <dimen name="space_35">70dp</dimen>
+    <dimen name="space_53">106dp</dimen>
+    <dimen name="space_20">40dp</dimen>
+    <dimen name="space_22">44dp</dimen>
+    <dimen name="space_25">50dp</dimen>
+    <dimen name="space_30">60dp</dimen>
+    <dimen name="space_40">80dp</dimen>
+    <dimen name="space_45">85dp</dimen>
+    <dimen name="space_100">200dp</dimen>
+    <dimen name="space_187">376dp</dimen>
+    <dimen name="space_nav">7dp</dimen>
+    <dimen name="space_150">300dp</dimen>
+    <dimen name="space_90">180dp</dimen>
+    <dimen name="space_140">260dp</dimen>
+    <dimen name="space_160">270dp</dimen>
+    <dimen name="drawer_nav_width">480dp</dimen>
+    <dimen name="drawer_nav_item_height">96dp</dimen>
+    <dimen name="picture_profile_width">200dp</dimen>
+    <dimen name="picture_profile_height">200dp</dimen>
+    <dimen name="pict_grid">400dp</dimen>
+    <dimen name="picture_avatar_width">80dp</dimen>
+    <dimen name="picture_avatar_height">80dp</dimen>
+    <dimen name="image_height">700dp</dimen>
+    <dimen name="video_height">400dp</dimen>
+    <dimen name="corner">6dp</dimen>
+    <dimen name="nav_margin">520dp</dimen>
+    <dimen name="space_225">450dp</dimen>
+
+    <dimen name="circle_size">60dp</dimen>
+    <dimen name="circle_radio_size">17dp</dimen>
+
+
+    <dimen name="estore_product_width">180dp</dimen>
+    <dimen name="estore_product_height">140dp</dimen>
+</resources>

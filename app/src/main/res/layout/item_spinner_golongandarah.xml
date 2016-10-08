@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.konsula.app.ui.custom.CustomtextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:paddingTop="@dimen/space_5"
+    android:paddingBottom="@dimen/space_5"
+    android:paddingRight="@dimen/space_10"
+    font:name="Label"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"/>

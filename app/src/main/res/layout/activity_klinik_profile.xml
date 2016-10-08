@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:font="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/soft_grey">
+
+
+    <ProgressBar
+        android:id="@+id/klinik_profile_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/klinik_profile_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <RelativeLayout
+            android:id="@+id/klinik_profile_header_container_relative_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/klinik_profile_header_container_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cover_height"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/coordinat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/klinik_profile_header_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                           <com.konsula.app.ui.custom.widget.CircleIndicator
+                               android:id="@+id/indicator"
+                               android:layout_width="match_parent"
+                               android:layout_height="20dp"
+                               android:layout_alignBottom="@id/klinik_profile_header_viewpager"
+                               CircleIndicator:ci_background="@android:color/white"
+                               CircleIndicator:ci_gravity="center"
+                               CircleIndicator:ci_margin="7dp"
+                               CircleIndicator:ci_mode="outside"
+                               CircleIndicator:ci_radius="4dp"
+                               CircleIndicator:ci_selected_background="@color/grey_dark" />
+                    </RelativeLayout>
+                </android.support.design.widget.CoordinatorLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/klinik_profile_header_container_linear_layout">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:alpha="0.2"
+                    android:background="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/klinik_header_cover_back_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingBottom="@dimen/space_2"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_action_back" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_rating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/soft_grey"
+            android:orientation="horizontal"
+            android:layout_below="@id/klinik_profile_header_container_relative_layout"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/klinik_profile_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Denta Medika"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    font:name="Label"
+                    font:type="bold" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/klinik_profile_category_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dokter Gigi"
+                    android:textColor="@color/textColorBase"
+                    android:textSize="@dimen/text_size"
+                    font:name="Label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:onClick="saveReview"
+                android:layout_marginRight="@dimen/space_20">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/btn_beri_ulasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_textview_rounded_pink"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_5"
+                    android:text="@string/tulis_ulasan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_super_small_size"
+                    android:textStyle="bold"
+                    font:name="Label"
+                    android:paddingRight="@dimen/space_5" />
+                <RatingBar
+                    android:id="@+id/klinik_profile_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:progressDrawable="@drawable/ratingstar"
+                    android:rating="3.5" />
+
+                <LinearLayout
+                    android:id="@+id/layout_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/klinik_profile_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_2"
+                        android:text="17"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_tab_size" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/review" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/klinik_profile_bottom_container_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/layout_rating"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                             android:layout_width="fill_parent"
+                                                             android:layout_height="fill_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:elevation="0dp">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/klinik_profile_content_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:measureAllChildren="true"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/header_pink"
+                        app:tabIndicatorHeight="3dp"
+                        app:tabPaddingBottom="-1dp"
+                        app:tabPaddingEnd="-1dp"
+                        app:tabPaddingStart="-1dp"
+                        app:tabPaddingTop="-1dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/header_pink" />
+                </android.support.design.widget.AppBarLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/klinik_profile_content_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolbar_main_setting_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space_10"
+            android:src="@drawable/ic_setting" />
+        <ImageView
+            android:id="@+id/toolbar_mini_konsula_image_view"
+            android:padding="@dimen/space_8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_50"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/toolbar_main_setting_image_view"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:src="@drawable/ic_minikonsula"
+            android:textSize="@dimen/toolbar_text_size" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            android:id="@+id/toolbar_main_name_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/toolbar_main_setting_image_view"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_text_size"
+            font:name="Label" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

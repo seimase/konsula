@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_booking_information"
+            layout="@layout/layout_toolbar_booking_information" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_20">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_20"
+            android:text="MASUKKAN KODE VERIFIKASI YANG DIKIRIMKAN"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:text="KE NOMOR ANDA"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/confirmation_booking_phone_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/space_20"
+            android:text="081243423312"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/hintkodeisi"
+            android:textColor="@color/textColorBase"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/confirmation_booking_verification_code_edit_text"
+            android:layout_width="@dimen/video_height"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_20"
+            android:maxLength="6"
+            android:gravity="center"
+            android:background="@color/soft_grey"
+            android:hint="@string/kode_ferifikasi"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:paddingTop="@dimen/space_10" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Label"
+            font:type="bold"
+            android:id="@+id/confirmation_booking_text_view"
+            android:layout_width="@dimen/video_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/pink"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:paddingTop="@dimen/space_10"
+            android:text="@string/title_dialog_booking_confirmation"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.konsula.app.ui.custom.CustomtextView
+            font:name="Label"
+            font:type="bold"
+            android:id="@+id/confirmation_booking_resend_text_view"
+            android:layout_width="@dimen/video_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@color/grey_dark"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:paddingTop="@dimen/space_10"
+            android:text="KIRIM ULANG"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Content"
+        android:id="@+id/tv_dp_education"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MD - General Medicine -"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_super_small_size" />
+
+</LinearLayout>

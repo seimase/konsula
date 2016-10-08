@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.konsula.app.ui.custom.CustomtextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    font:name="Content"
+    android:paddingLeft="@dimen/space_5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_klinik_profile_general"
+    android:text="Persatuan Dokter Indonesia"
+    android:singleLine="true"
+    android:textColor="@color/textColorSecondary"
+    android:textSize="@dimen/text_super_small_size" />

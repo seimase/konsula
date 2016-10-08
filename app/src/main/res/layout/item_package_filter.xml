@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/space_2"
+    android:paddingLeft="@dimen/space_16"
+    android:paddingRight="@dimen/space_16"
+    android:paddingTop="@dimen/space_2">
+
+    <CheckBox
+        android:id="@+id/cbPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.konsula.app.ui.custom.CustomtextView
+        android:id="@+id/tvPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_16"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/estore_text_color"
+        android:textSize="@dimen/text_size"
+        font:name="Content" />
+</LinearLayout>

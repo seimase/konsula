@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/invoice_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_10"
+        android:orientation="vertical"
+        android:background="@drawable/border_bottom_light_gray">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/txt_product_package_name"
+                    font:type="bold"
+                    font:name="Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/space_14"
+                    android:textColor="@color/estore_text_color"
+                    android:text="Paket 1: Rongga Atas"/>
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/txt_product_package_description"
+                    font:name="Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:textSize="@dimen/text_small_size"
+                    android:textColor="@color/estore_text_color"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adispicing elit."/>
+            </LinearLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/txt_product_package_price"
+                    font:name="Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:textSize="@dimen/space_14"
+                    android:textColor="@color/estore_text_color"
+                    android:text="IDR 200.000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/txt_product_package_price_detail"
+                    font:name="Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:textSize="@dimen/space_14"
+                    android:textColor="@color/estore_text_color"
+                    android:text="(4 Items x IDR 200.000)"/>
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/txt_product_package_subtotal"
+                    font:name="Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:textSize="@dimen/space_14"
+                    android:textColor="@color/estore_text_color"
+                    android:text="IDR 800.000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

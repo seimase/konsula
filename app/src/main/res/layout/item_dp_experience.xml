@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Content"
+        android:id="@+id/tv_dp_exp_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1991 - 2005, "
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_super_small_size" />
+    <com.konsula.app.ui.custom.CustomtextView
+        font:name="Content"
+        android:id="@+id/tv_dp_exp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MD - General Medicine - MD - General Medicine -MD - General Medicine -MD - General Medicine -MD - General Medicine -"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_super_small_size" />
+
+</LinearLayout>

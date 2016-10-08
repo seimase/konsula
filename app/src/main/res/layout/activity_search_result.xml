@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_filter_main_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_s">
+    <RelativeLayout
+        android:id="@+id/search_filter_result_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:translationY="52dp"
+        android:layout_marginBottom="55dp">
+        <ListView
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:id="@+id/search_result_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+        <TextView
+            android:id="@+id/search_result_empty_list_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Empty List"
+            android:textColor="@color/textColorSecondary"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/search_header_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:background="@color/pink">
+
+            <ImageButton
+                android:id="@+id/close_action_contact_us_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/space_10"
+                android:src="@drawable/ic_action_back" />
+
+            <ImageButton
+                android:id="@+id/filter_result_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/space_5"
+                android:src="@drawable/ic_filter"
+                android:onClick="filter"/>
+
+            <ImageButton
+                android:id="@+id/search_result_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_5"
+                android:layout_toLeftOf="@id/filter_result_image_button"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_search_small"
+                android:onClick="search"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/close_action_contact_us_image_button"
+                android:layout_toLeftOf="@+id/search_result_image_button">
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/search_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    font:name="Label"
+                    font:type="bold"/>
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/location_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    font:name="Content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_filter_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/pink"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/search_filter_doctor_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_5">
+
+                <ImageButton
+                    android:id="@+id/search_filter_doctor_action_close_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_close"
+                    android:onClick="closeSearch"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/cari"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_search_filter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:theme="@style/radionbutton"
+                    android:id="@+id/radio_search_filter_doctor"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="20sp"
+                    android:checked="true"
+                    android:layout_height="20sp"
+                    android:buttonTint="@android:color/transparent"
+                    android:background="@drawable/background_radiobutton_search"
+                    android:textSize="@dimen/text_size" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/tvDokter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:layout_marginRight="@dimen/space_25"
+                    android:foregroundGravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/dokter_rbo" />
+
+                <RadioButton
+                    android:theme="@style/radionbutton"
+                    android:id="@+id/radio_search_filter_klinik"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:background="@drawable/background_radiobutton_search"
+                    android:textSize="@dimen/text_size"
+                    android:buttonTint="@android:color/transparent" />
+
+                <com.konsula.app.ui.custom.CustomtextView
+                    android:id="@+id/tvKlinik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:textColor="@color/white"
+                    android:text="@string/klinik_rbo" />
+            </RadioGroup>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <AutoCompleteTextView
+                    android:id="@+id/search_filter_doctor_location_box_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/search_doctor_header_container"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/space_10"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_rounded_soft_grey_box"
+                    android:drawableLeft="@drawable/ic_point_map"
+                    android:hint="Location"
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:paddingLeft="@dimen/space_5"
+                    android:paddingTop="@dimen/space_5"
+                    android:paddingRight="39dp"
+                    android:paddingBottom="@dimen/space_5"
+                    android:textColorHint="@color/textColorHint"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_clear"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:onClick="clearLokasi"/>
+            </FrameLayout>
+            <AutoCompleteTextView
+                android:id="@+id/search_filter_doctor_spesialisasi_box_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/search_doctor_location_box_edit_text"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_rounded_soft_grey_box"
+                android:drawableLeft="@drawable/ic_search_white"
+                android:hint="Spesialisasi"
+                android:padding="@dimen/space_5"
+                android:singleLine="true"
+                android:textColorHint="@color/textColorHint" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
